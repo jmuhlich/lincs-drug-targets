@@ -1,0 +1,570 @@
+AATP	ATPases / AAA-type	http://www.genenames.org/genefamilies/ATP#AATP
+ABCA	ATP binding cassette transporters / subfamily A	http://www.genenames.org/genefamilies/ABC#ABCA
+ABCB	ATP binding cassette transporters / subfamily B	http://www.genenames.org/genefamilies/ABC#ABCB
+ABCC	ATP binding cassette transporters / subfamily C	http://www.genenames.org/genefamilies/ABC#ABCC
+ABCD	ATP binding cassette transporters / subfamily D	http://www.genenames.org/genefamilies/ABC#ABCD
+ABCE	ATP binding cassette transporters / subfamily E	http://www.genenames.org/genefamilies/ABC#ABCE
+ABCF	ATP binding cassette transporters / subfamily F	http://www.genenames.org/genefamilies/ABC#ABCF
+ABCG	ATP binding cassette transporters / subfamily G	http://www.genenames.org/genefamilies/ABC#ABCG
+ABHD	Abhydrolase domain containing	http://www.genenames.org/genefamilies/ABHD
+ACER	Alkaline ceramidase	http://www.genenames.org/genefamilies/ACER
+ACOT	Acyl CoA thioesterases	http://www.genenames.org/genefamilies/ACOT
+ACS	Acyl-CoA synthetase family	http://www.genenames.org/genefamilies/ACS
+ADAM	ADAM metallopeptidase domain containing	http://www.genenames.org/genefamilies/ADAM
+ADAMTS	ADAM metallopeptidases with thrombospondin type 1 motif	http://www.genenames.org/genefamilies/ADAMTS
+ADCY	Adenylate cyclases	http://www.genenames.org/genefamilies/ADCY
+ADH	Alcohol dehydrogenases	http://www.genenames.org/genefamilies/ADH
+ADIPOR	GPCR / Unclassified : Adiponectin receptors	http://www.genenames.org/genefamilies/GPCRU#ADIPOR
+ADORA	GPCR / Class A : Adenosine receptors	http://www.genenames.org/genefamilies/GPCRA#ADORA
+ADRA	GPCR / Class A : Adrenoceptors : alpha	http://www.genenames.org/genefamilies/GPCRA#ADR#ADRA
+ADRB	GPCR / Class A : Adrenoceptors : beta	http://www.genenames.org/genefamilies/GPCRA#ADR#ADRB
+AGO	Argonaute/PIWI family	http://www.genenames.org/genefamilies/AGO
+AGPAT	1-acylglycerol-3-phosphate O-acyltransferases	http://www.genenames.org/genefamilies/AGPAT
+AGTR	GPCR / Class A : Angiotensin receptors	http://www.genenames.org/genefamilies/GPCRA#AGTR
+AK	Adenylate kinases	http://www.genenames.org/genefamilies/AK
+AKAP	A-kinase anchor proteins	http://www.genenames.org/genefamilies/AKAP
+AKR	Aldo-keto reductases	http://www.genenames.org/genefamiles/AKR
+ALDH	Aldehyde dehydrogenases	http://www.genenames.org/genefamilies/ALDH
+ALKB	Alkylation repair homologs	http://www.genenames.org/genefamilies/ALKB
+ALOX	Arachidonate lipoxygenases	http://www.genenames.org/genefamilies/ALOX
+ANAPC	Anaphase promoting complex subunits	http://www.genenames.org/genefamilies/ANAPC
+ANKRD	Ankyrin repeat domain containing	http://www.genenames.org/genefamilies/ANKRD
+ANO	Ion channels / Chloride channels : Calcium activated : Anoctamins	http://www.genenames.org/genefamilies/CLCNS#ANO
+ANP32	ANP32 acidic nuclear phosphoproteins	http://www.genenames.org/genefamilies/ANP32
+ANXA	Annexins	http://www.genenames.org/genefamilies/ANXA
+APOBEC	Apolipoprotein B mRNA editing enzymes	http://www.genenames.org/genefamilies/APOBEC
+APOLIPO	Apolipoproteins	http://www.genenames.org/genefamilies/APOLIPO
+AQP	Ion channels / Aquaporins	http://www.genenames.org/genefamilies/AQP
+ARF	ADP-ribosylation factors	http://www.genenames.org/genefamilies/ARF
+ARHGAP	Rho GTPase activating proteins	http://www.genenames.org/genefamilies/ARHGAP
+ARHGEF	Rho guanine nucleotide exchange factors	http://www.genenames.org/genefamilies/ARHGEF
+ARL	ADP-ribosylation factors-like	http://www.genenames.org/genefamilies/ARL
+ARMC	Armadillo repeat containing	http://www.genenames.org/genefamilies/ARMC
+ARPC	Actin related protein 2/3 complex subunits	http://www.genenames.org/genefamilies/ARPC
+ARS	Arylsulfatase family	http://www.genenames.org/genefamilies/ARS
+ASIC	Ion channels / Acid-sensing (proton-gated) ion channels	http://www.genenames.org/genefamilies/ASIC
+ATXN	Ataxins	http://www.genenames.orggenefamilies/ATXN
+AVPR	GPCR / Class A : Vasopressin and oxytocin receptors	http://www.genenames.org/genefamilies/GPCRA#AVPR
+ArfGAP	ADP-ribosylation factor GTPase activating proteins	http://www.genenames.org/genefamilies/ARFGAP
+B3GAT	Beta-1,3-glucuronyltransferases	http://www.genenames.org/genefamilies/B3GAT
+B3GT	Beta 3-glycosyltransferases	http://www.genenames.org/genefamilies/B3GT
+B4GT	Beta 4-glycosyltransferases	http://www.genenames.org/genefamilies/B4GT
+BDKR	GPCR / Class A : Bradykinin receptors	http://www.genenames.org/genefamilies/GPCRA#BDKR
+BEND	BEN domain containing	http://www.genenames.org/genefamilies/BEND
+BEST	Ion channels / Chloride channels : Calcium activated : Bestrophins	http://www.genenames.org/genefamilies/CLCNS#BEST
+BIRC	Baculoviral IAP repeat containing	http://www.genenames.org/genefamilies/BIRC
+BLOC1S	Biogenesis of lysosomal organelles complex-1 subunits	http://www.genenames.org/genefamilies/BLOC1S
+BMP	Bone morphogenetic proteins	http://www.genenames.org/genefamilies/BMP
+BPIF	BPI fold containing	http://www.genenames.org/genefamilies/BPIF
+BRICD	BRICHOS domain containing	http://www.genenames.org/genefamilies/BRICD
+BRS	GPCR / Class A : Bombesin receptors	http://www.genenames.org/genefamilies/GPCRA#BRS
+BTBD	BTB/POZ domain containing	http://www.genenames.org/genefamilies/BTBD
+C1SET	Immunoglobulin superfamily / C1-set domain containing	http://www.genenames.org/genefamilies/C1SET
+C2SET	Immunoglobulin superfamily / C2-set domain containing	http://www.genenames.org/genefamilies/C2SET
+CA	Carbonic anhydrases	http://www.genenames.org/genefamilies/CA
+CACN	Calcium channel subunits	http://www.genenames.org/genefamilies/CACN
+CACN1	Voltage-gated ion channels / Calcium channels	http://www.genenames.org/genefamilies/VGIC#CACN1
+CALCR	GPCR / Class B : Calcitonin receptors	http://www.genenames.org/genefamilies/GPCRB#CALCR
+CASP	Caspases	http://www.genenames.org/genefamilies/CASP
+CASR	GPCR / Class C : Calcium-sensing receptors	http://www.genenames.org/genefamilies/GPCRC#CASR
+CASS	Cas scaffolding proteins	http://www.genenames.org/genefamilies/CASS
+CATSPER	Voltage-gated ion channels / Cation channels, sperm associated	http://www.genenames.org/genefamilies/VGIC#CATSPER
+CCKNR	GPCR / Class A : Cholecystokinin receptors	http://www.genenames.org/genefamilies/GPCRA#CCKNR
+CCL	Chemokine ligands	http://www.genenames.org/genefamilies/CCL
+CCR	GPCR / Class A : Chemokine receptors : C-C motif	http://www.genenames.org/genefamilies/GPCRA#CR#CCR
+CD	CD molecules	http://www.genenames.org/genefamilies/CD
+CDHR	Cadherins / Cadherin-related	http://www.genenames.org/genefamilies/CDH#CDHR
+CDK	Cyclin-dependent kinases	http://www.genenames.org/genefamilies/CDK
+CERS	Homeoboxes / CERS class	http://www.genenames.org/genefamilies/homeobox#CERS
+CES	Carboxylesterases	http://www.genenames.org/genefamilies/CES
+CFTR	Ion channels / Chloride channels : Cystic fibrosis transmembrane conductance regulators	http://www.genenames.org/genefamilies/CLCNS#CFTR
+CHAP	Heat Shock Proteins / Chaperonins	http://www.genenames.org/genefamilies/HSP#CHAP
+CHCHD	Coiled-coil-helix-coiled-coil-helix domain containing	http://www.genenames.org/genefamilies/CHCHD
+CHMP	Charged multivesicular body proteins	http://www.genenames.org/genefamilies/CHMP
+CHR	Cholinergic receptors	http://www.genenames.org/genefamilies/CHR
+CHRM	GPCR / Class A : Cholinergic receptors, muscarinic	http://www.genenames.org/genefamilies/GPCRA#CHRM
+CHRN	Ligand-gated ion channels / Acetylcholine receptors, nicotinic	http://www.genenames.org/genefamilies/LGIC#CHRN
+CISD	CDGSH iron sulfur domain containing	http://www.genenames.org/genefamilies/CDGSH
+CLCN	Ion channels / Chloride channels : Voltage-sensitive	http://www.genenames.org/genefamilies/CLCNS#CLCN
+CLDN	Claudins	http://www.genenames.org/genefamilies/CLDN
+CLEC	C-type lectin domain containing	http://www.genenames.org/genefamilies/CLEC
+CLIC	Ion channels / Chloride channels : Intracellular	http://www.genenames.org/genefamilies/CLCNS#CLIC
+CLK	CDC-like kinases	http://www.genenames.org/genefamilies/CLK
+CNAR	GPCR / Class A : Complement component receptors	http://www.genenames.org/genefamilies/GPCRA#CNAR
+CNG	Voltage-gated ion channels / Cyclic nucleotide-regulated channels	http://www.genenames.org/genefamilies/VGIC#CNG
+CNR	GPCR / Class A : Cannabinoid receptors	http://www.genenames.org/genefamilies/GPCRA#CNR
+COG	Components of oligomeric golgi complex	http://www.genenames.org/genefamilies/COG
+COLEC	Collectins	http://www.genenames.org/genefamilies/COLEC
+COLLAGEN	Collagens	http://www.genenames.org/genefamilies/COLLAGEN
+COLPG	Proteoglycans / Extracellular Matrix : Collagen proteoglycans	http://www.genenames.org/genefamilies/proteoglycan#COLPG
+CORO	Coronins	http://www.genenames.org/genefamilies/CORO
+CRHR	GPCR / Class B : Corticotropin-releasing factor receptors	http://www.genenames.org/genefamilies/GPCRB#CRHR
+CSPG	Proteoglycans / Cell surface : Other	http://www.genenames.org/genefamilies/proteoglycan#CSPG
+CTD	Serine/threonine phosphatases / CTD aspartate-based phosphatases	http://www.genenames.org/genefamilies/PPP-PPM-CTD#CTD
+CTS	Cathepsins	http://www.genenames.org/genefamilies/CTS
+CUT	Homeoboxes / CUT class	http://www.genenames.org/genefamilies/homeobox#CUT
+CX3CR	GPCR / Class A : Chemokine receptors : C-X-3-C motif	http://www.genenames.org/genefamilies/GPCRA#CR#CX3CR
+CXCR	GPCR / Class A : Chemokine receptors : C-X-C motif	http://www.genenames.org/genefamilies/GPCRA#CR#CXCR
+CYB	Cytochrome b genes	http://www.genenames.org/genefamilies/CYB#CYB
+CYB5AP	Cytochrome b / Pseudogenes	http://www.genenames.org/genefamilies/CYB#CYB5AP
+CYP	Cytochrome P450s	http://www.genenames.org/genefamilies/CYP
+DCAF	DDB1 and CUL4 associated factors	http://www.genenames.org/genefamilies/DCAF
+DDX	DEAD-boxes	http://www.genenames.org/genefamilies/DDX
+DEFA	Defensins, alpha	http://www.genenames.org/genefamilies/DEFA
+DEFB	Defensins, beta	http://www.genenames.org/genefamilies/DEFB
+DENND	DENN/MADD domain containing	http://www.genenames.org/genefamilies/DENND
+DHX	DEAH-boxes	http://www.genenames.org/genefamilies/DHX
+DN	Axonemal dyneins	http://www.genenames.org/genefamilies/DN
+DNAJ	Heat shock proteins / DNAJ (HSP40)	http://www.genenames.org/genefamilies/HSP#DNAJ
+DNLZ	Zinc fingers	http://www.genenames.org/genefamilies/ZF
+DOLPM	Dolichyl D-mannosyl phosphate dependent mannosyltransferases	http://www.genenames.org/genefamilies/DOLPM
+DRD	GPCR / Class A : Dopamine receptors	http://www.genenames.org/genefamilies/GPCRA#DRD
+DUSPA	Protein tyrosine phosphatases / Class I Cys-based PTPs : Atypical dual specificity phosphatases	http://www.genenames.org/genefamilies/PTP#DUSPA
+DUSPC	Protein tyrosine phosphatases / Class I Cys-based PTPs : CDC14s	http://www.genenames.org/genefamilies/PTP#DUSPC
+DUSPM	Protein tyrosine phosphatases / Class I Cys-based PTPs : Myotubularins	http://www.genenames.org/genefamilies/PTP#DUSPM
+DUSPP	Protein tyrosine phosphatases / Class I Cys-based PTPs : PRLs	http://www.genenames.org/genefamilies/PTP#DUSPP
+DUSPQ	Protein tyrosine phosphatases / Class I Cys-based PTPs : PTENs	http://www.genenames.org/genefamilies/PTP#DUSPQ
+DUSPS	Protein tyrosine phosphatases / Class I Cys-based PTPs : Slingshots	http://www.genenames.org/genefamilies/PTP#DUSPS
+DUSPT	Protein tyrosine phosphatases / Class I Cys-based PTPs : MAP kinase phosphatases	http://www.genenames.org/genefamilies/PTP#DUSPT
+DVL	Dishevelled homologs	http://www.genenames.org/genefamilies/DVL
+DYN	Cytoplasmic dyneins	http://www.genenames.org/genefamilies/DYN
+ECMPG	Proteoglycans / Extracellular Matrix : Other	http://www.genenames.org/genefamilies/proteoglycan#ECMPG
+EDNR	GPCR / Class A : Endothelin receptors	http://www.genenames.org/genefamilies/GPCRA#EDNR
+EFHAND	EF-hand domain containing	http://www.genenames.org/genefamilies/EFHAND
+EFN	Ephrins	http://www.genenames.org/genefamilies/EFN
+ELMO	Engulfment and cell motility proteins	http://www.genenames.org/genefamilies/ELMO
+ELP	Elongator acetyltransferase complex subunits	http://www.genenames.org/genefamilies/ELP
+EMID	EMI domain containing	http://www.genenames.org/genefamilies/EMID
+ENDOLIG	Endogenous ligands	http://www.genenames.org/genefamilies/ENDOLIG
+EPH	EPH receptors	http://www.genenames.org/genefamilies/EPH
+ERI	Enhanced RNAi three prime mRNA exonucleases	http://www.genenames.org/genefamilies/ERI
+EXT	Exostosin glycosyltransferase family	http://www.genenames.org/genefamilies/EXT
+F1ATP	ATPases / F-type	http://www.genenames.org/genefamilies/ATP#F1ATP
+F2R	GPCR / Class A : Protease activated receptors	http://www.genenames.org/genefamilies/GPCRA#F2R
+FABP	Fatty acid binding protein family	http://www.genenames.org/genefamilies/FABP
+FADS	Fatty acid desaturases	http://www.genenames.org/genefamilies/FADS
+FANC	Fanconi anemia, complementation groups	http://www.genenames.org/genefamilies/FANC
+FATHD	Fatty acid hydroxylase domain containing	http://www.genenames.org/genefamilies/FATHD
+FATP	Mitochondrial respiratory chain complex / Complex V	http://www.genenames.org/genefamilies/mitocomplex#FATP
+FBLN	Fibulins	http://www.genenames.org/genefamilies/FBLN
+FBXL	F-boxes / Leucine-rich repeats	http://www.genenames.org/genefamilies/FBX#FBXL
+FBXO	F-boxes /  "other"	http://www.genenames.org/genefamilies/FBX#FBXO
+FBXW	F-boxes / WD-40 domains	http://www.genenames.org/genefamilies/FBX#FBXW
+FERMT	Fermitins	http://www.genenames.org/genefamilies/FERMT
+FFAR	GPCR / Class A : Fatty acid receptors	http://www.genenames.org/genefamilies/GPCRA#FFAR
+FIBC	Fibrinogen C domain containing	http://www.genenames.org/genefamilies/FIBC
+FLYWCH	Zinc fingers	http://www.genenames.org/genefamilies/ZF
+FN3	Fibronectin type III domain containing	http://www.genenames.org/genefamilies/FN3
+FOX	Forkhead boxes	http://www.genenames.org/genefamilies/FOX
+FPR	GPCR / Class A : Formyl peptide receptors	http://www.genenames.org/genefamilies/GPCRA#FPR
+FUT	Fucosyltransferases	http://www.genenames.org/genefamilies/FUT
+FZD	GPCR / Class F : Frizzled receptors	http://www.genenames.org/genefamilies/GPCRF#FZD
+GABBR	GPCR / Class C : GABA(B) receptors	http://www.genenames.org/genefamilies/GPCRC#GABBR
+GABR	GABA receptors	http://www.genenames.org/genefamilies/GABR
+GABRA	Ligand-gated ion channels / GABA(A) receptors	http://www.genenames.org/genefamilies/LGIC#GABRA
+GALR	GPCR / Class A : Galanin receptors	http://www.genenames.org/genefamilies/GPCRA#GALR
+GATAD	GATA zinc finger domain containing	http://www.genenames.org/genefamilies/GATAD
+GCGR	GPCR / Class B : Glucagon receptors	http://www.genenames.org/genefamilies/GPCRB#GCGR
+GGT	Gamma-glutamyltransferases	http://www.genenames.org/genefamilies/GGT
+GHSR	GPCR / Class A : Ghrelin receptors	http://www.genenames.org/genefamilies/GPCRA#GHSR
+GIMAP	GTPases, IMAP	http://www.genenames.org/genefamilies/GIMAP
+GJ	Ion channels / Gap junction proteins (connexins)	http://www.genenames.org/genefamilies/GJ
+GK	Glycerol kinases	http://www.genenames.org/genefamilies/GK
+GLRA	Ligand-gated ion channels / Glycine receptors	http://www.genenames.org/genefamilies/LGIC#GLRA
+GLT1	Glycosyltransferase group 1 domain containing	http://www.genenames.org/genefamilies/GLT1
+GLT2	Glycosyltransferase family 2 domain containing	http://www.genenames.org/genefamilies/GLT2
+GLT6	Glycosyltransferase family 6 domain containing	http://www.genenames.org/genefamilies/GLT6
+GLT8	Glycosyltransferase family 8 domain containing	http://www.genenames.org/genefamilies/GLT8
+GNRHR	GPCR / Class A : Gonadotropin-releasing hormone receptors	http://www.genenames.org/genefamilies/GPCRA#GNRHR
+GPATCH	G patch domain containing	http://www.genenames.org/genefamilies/GPATCH
+GPC	Proteoglycans / Cell Surface : Glypicans	http://www.genenames.org/genefamilies/proteoglycan#GPC
+GPCRAO	GPCR / Class A : Orphans	http://www.genenames.org/genefamilies/GPCRA#GPCRAO
+GPCRBO	GPCR / Class B : Orphans	http://www.genenames.org/genefamilies/GPCRB#GPCRBO
+GPCRCO	GPCR / Class C : Orphans	http://www.genenames.org/genefamilies/GPCRC#GPCRCO
+GPN	GPN-loop GTPases	http://www.genenames.org/genefamilies/GPN
+GR	Glutamate receptors	http://www.genenames.org/genefamilies/GR
+GRI	Ligand-gated ion channels / Glutamate receptors, ionotropic	http://www.genenames.org/genefamilies/LGIC#GRI
+GRM	GPCR / Class C : Glutamate receptors, metabotropic	http://www.genenames.org/genefamilies/GPCRC#GRM
+GSTK	Glutathione S-transferases / Mitochondrial (kappa)	http://www.genenames.org/genefamilies/GST#GSTK
+GTF	General transcription factors	http://www.genenames.org/genefamilies/GTF
+GTSHR	GPCR / Class A : Gonadotropin and TSH receptors	http://www.genenames.org/genefamilies/GPCRA#GTSHR
+Gene Family Tag	Gene Family Description	URL
+HAUS	HAUS augmin-like complex subunits	http://www.genenames.org/genefamilies/HAUS
+HCAR	GPCR / Class A : Hydroxy-carboxylic acid receptors	http://www.genenames.org/genefamilies/GPCRA#HCAR
+HCRTR	GPCR / Class A : Hypocretin (orexin) receptors	http://www.genenames.org/genefamilies/GPCRA#HCRTR
+HIST	Histones / Replication-dependent	http://www.genenames.org/genefamilies/histones#HIST
+HLA	Histocompatibility complex	http://www.genenames.org/genefamilies/HLA
+HMG	High-mobility group / Canonical	http://www.genenames.org/genefamilies/HMG#HMG
+HMGA1P	High mobility group / AT-hook pseudogenes	http://www.genenames.org/genefamilies/HMG#HMGAP
+HMGBP	High mobility group / HMG-box pseudogenes	http://www.genenames.org/genefamilies/HMG#HMGBP
+HMGNP	High mobility group / Nucleosome binding pseudogenes	http://www.genenames.org/genefamilies/HMG#HMGNP
+HMGX	High mobility group / Non-canonical	http://www.genenames.org/genefamilies/HMG#HMGX
+HNF	Homeoboxes / HNF class	http://www.genenames.org/genefamilies/homeobox#HNF
+HOXL	Homeoboxes / ANTP class : HOXL subclass	http://www.genenames.org/genefamilies/homeobox#HOXL
+HRH	GPCR / Class A : Histamine receptors	http://www.genenames.org/genefamilies/GPCRA#HRH
+HSP70	Heat shock proteins / HSP70	http://www.genenames.org/genefamilies/HSP#HSP70
+HSPB	Heat shock proteins / HSPB	http://www.genenames.org/genefamilies/HSP#HSPB
+HSPC	Heat shock proteins / HSPC	http://www.genenames.org/genefamilies/HSP#HSPC
+HTR	5-HT (serotonin) receptors	http://www.genenames.org/genefamilies/HTR
+HTR3	Ligand-gated ion channels / 5-HT (serotonin) receptors, ionotropic	http://www.genenames.org/genefamilies/LGIC#HTR3
+HTRGP	GPCR / Class A : 5-HT (serotonin) receptors, GPCR only	http://www.genenames.org/genefamilies/GPCRA#HTRGP
+HVCN	Voltage-gated ion channels / Hydrogen voltage-gated channel	http://www.genenames.org/genefamilies/VGIC#HVCN
+HYALECTAN	Proteoglycans / Extracellular Matrix : Hyalectans	http://www.genenames.org/genefamilies/proteoglycan#HYALECTAN
+IFF1	Intermediate filaments type I, keratins (acidic)	http://www.genenames.org/genefamilies/IF
+IFF2	Intermediate filaments type II, keratins (basic)	http://www.genenames.org/genefamilies/IF
+IFF3	Intermediate filaments type III	http://www.genenames.org/genefamilies/IF
+IFF4	Intermediate filaments type IV	http://www.genenames.org/genefamilies/IF
+IFF5	Intermediate filaments type V, lamins	http://www.genenames.org/genefamilies/IF
+IFF6	Intermediate filaments type VI, eye lens intermediate filaments	http://www.genenames.org/genefamilies/IF
+IFFO	Intermediate filament family orphans	http://www.genenames.org/genefamilies/IF
+IFN	Interferons	http://www.genenames.org/genefamilies/IFN
+IFT	Intraflagellar transport homologs	http://www.genenames.org/genefamilies/IFT
+IGD	Immunoglobulin superfamily / Immunoglobulin-like domain containing	http://www.genenames.org/genefamilies/IGD
+IGH	Immunoglobulins / IGH locus	http://www.genenames.org/genefamilies/IG#IGH
+IGHO	Immunoglobulins / IGH orphons	http://www.genenames.org/genefamilies/IG#IGHO
+IGJ	Immunoglobulins / IGJ linker	http://www.genenames.org/genefamilies/IG#IGJ
+IGK	Immunoglobulins / IGK locus	http://www.genenames.org/genefamilies/IG#IGK
+IGKO	Immunoglobulins / IGK orphons	http://www.genenames.org/genefamilies/IG#IGKO
+IGL	Immunoglobulins / IGL locus	http://www.genenames.org/genefamilies/IG#IGL
+IGLO	Immunoglobulins / IGL orphons	http://www.genenames.org/genefamilies/IG#IGLO
+IKZF	IKAROS zinc fingers	http://www.genenames.org/genefamilies/IKZF
+IL	Interleukins and interleukin receptors	http://www.genenames.org/genefamilies/IL
+INO80	INO80 complex subunits	http://www.genenames.org/genefamilies/INO80
+IPO	Importins	http://www.genenames.org/genefamilies/IPO
+ISET	Immunoglobulin superfamily / I-set domain containing	http://www.genenames.org/genefamilies/ISET
+ITG	Integrins	http://www.genenames.org/genefamilies/ITG
+ITPR	Ion channels / Inositol triphosphate receptors	http://www.genenames.org/genefamilies/ITPR
+KANK	KN motif and ankyrin repeat domain containing	http://www.genenames.org/genefamilies/KANK
+KAT	Chromatin-modifying enzymes / K-acetyltransferases	http://www.genenames.org/genefamilies/KDM-KAT-KMT#KAT
+KCN	Potassium channels	http://www.genenames.org/genefamilies/KCN
+KCNJ	Voltage-gated ion channels / Potassium channels, Inwardly rectifying	http://www.genenames.org/genefamilies/VGIC#KCNJ
+KCNK	Voltage-gated ion channels / Potassium channels, Two-P	http://www.genenames.org/genefamilies/VGIC#KCNK
+KCa	Voltage-gated ion channels / Potassium channels, calcium-activated	http://www.genenames.org/genefamilies/VGIC#KCA
+KDM	Chromatin-modifying enzymes / K-demethylases	http://www.genenames.org/genefamilies/KDM-KAT-KMT#KDM
+KIF	Kinesins	http://www.genenames.org/genefamilies/KIF
+KIR	Killer cell immunoglobulin-like receptors	http://www.genenames.org/genefamilies/KIR
+KLF	Kruppel-like transcription factors	http://www.genenames.org/genefamilies/KLF
+KLHL	Kelch-like	http://www.genenames.org/genefamilies/KLHL
+KLK	Kallikreins	http://www.genenames.org/genefamilies/KLK
+KLR	Killer cell lectin-like receptors	http://www.genenames.org/genefamilies/KLR
+KMT	Chromatin-modifying enzymes / K-methyltransferases	http://www.genenames.org/genefamilies/KDM-KAT-KMT#KMT
+KRTAP	Keratin associated proteins	http://www.genenames.org/genefamilies/KRTAP
+Kv	Voltage-gated ion channels / Potassium channels	http://www.genenames.org/genefamilies/VGIC#KV
+LAIR	Leukocyte-associated Ig like receptors	http://www.genenames.org/genefamilies/LAIR
+LAM	Laminins	http://www.genenames.org/genefamilies/LAM
+LARP	La ribonucleoprotein domain containing	http://www.genenames.org/genefamilies/LARP
+LCE	Late cornified envelopes	http://www.genenames.org/genefamilies/LCE
+LCN	Lipocalins	http://www.genenames.org/genefamilies/lipocalin
+LDLR	Low density lipoprotein receptors	http://www.genenames.org/genefamilies/LDLR
+LGALS	Lectins, galactoside-binding	http://www.genenames.org/genefamilies/LGALS
+LILR	Leukocyte immunoglobulin-like receptors	http://www.genenames.org/genefamilies/LILR
+LIM	Homeoboxes / LIM class	http://www.genenames.org/genefamilies/homeobox#LIM
+LNCRNA	Long non-coding RNAs	http://www.genenames.org/rna/LNCRNA
+LPAR	GPCR / Class A : Lysophospholipid receptors : Lysophosphatidic acid	http://www.genenames.org/genefamilies/GPCRA#LPLR#LPAR
+LTBP	Latent transforming growth factor, beta binding proteins	http://www.genenames.org/genefamilies/LTBP
+LTNR	GPCR / Class A : Leukotriene receptors	http://www.genenames.org/genefamilies/GPCRA#LTNR
+LYRM	LYR motif containing	http://www.genenames.org/genefamilies/LYRM
+MAP2K	Mitogen-activated protein kinase cascade / Kinase kinases	http://www.genenames.org/genefamilies/MAPKcascade#MAP2K
+MAP3K	Mitogen-activated protein kinase cascade / Kinase kinase kinases	http://www.genenames.org/genefamilies/MAPKcascade#MAP3K
+MAP4K	Mitogen-activated protein kinase cascade / Kinase kinase kinase kinases	http://www.genenames.org/genefamilies/MAPKcascade#MAP4K
+MAPK	Mitogen-activated protein kinase cascade / Kinases	http://www.genenames.org/genefamilies/MAPKcascade#MAPK
+MARCH	MARCH membrane-associated ring fingers	http://www.genenames.org/genefamilies/MARCH
+MCDH	Cadherins / Major cadherins	http://www.genenames.org/genefamilies/CDH#MCDH
+MCHR	GPCR / Class A : MCH receptors	http://www.genenames.org/genefamilies/GPCRA#MCHR
+MCNR	GPCR / Class A : Melanocortin receptors	http://www.genenames.org/genefamilies/GPCRA#MCNR
+MEF2	Myocyte enhancer factors	http://www.genenames.org/genefamilies/MEF2
+MEX3	Mex-3 homologs	http://www.genenames.org/genefamilies/MEX3
+MGST	Glutathione S-transferases / Microsomal	http://www.genenames.org/genefamilies/GST#MGST
+MIR	ncRNAs / Micro RNAs	http://www.genenames.org/rna/MIR
+MISCRNA	ncRNAs / Small misc ncRNAs	http://www.genenames.org/rna/MISCRNA
+MITOAF	Mitochondrial respiratory chain complex assembly factors	http://www.genenames.org/genefamilies/MITOAF
+MLNR	GPCR / Class A : Motilin receptors	http://www.genenames.org/genefamilies/GPCRA#MLNR
+MOB	MOB kinase activators	http://www.genenames.org/genefamilies/MOB
+MROH	maestro heat-like repeat containing	http://www.genenames.org/genefamilies/MROH
+MRPL	Mitochondrial ribosomal proteins / large subunits	http://www.genenames.org/genefamilies/MRP#MRPL
+MRPO	Mitochondrial ribosomal proteins / "other"	http://www.genenames.org/genefamilies/MRP#MRPO
+MRPS	Mitochondrial ribosomal proteins / small subunits	http://www.genenames.org/genefamilies/MRP#MRPS
+MT	Metallothioneins	http://www.genenames.org/genefamilies/MT
+MTNR	GPCR / Class A : Melatonin receptors	http://www.genenames.org/genefamilies/GPCRA#MTNR
+MTTRNA	ncRNAs / Transfer RNA, mitochondrial	http://www.genenames.org/rna/TRNA#MTTRNA
+MUC	Mucins	http://www.genenames.org/genefamilies/MUC
+MXD	MAX dimerization proteins	http://www.genenames.org/genefamilies/MXD
+MYBP	Myosin binding proteins	http://www.genenames.org/genefamilies/MYBP
+MYHII	Myosins / Myosin superfamily : Class II	http://www.genenames.org/genefamilies/myosin#MYHII
+MYL	Myosins / Light chain	http://www.genenames.org/genefamilies/myosin#MYL
+MYOI	Myosins / Myosin superfamily : Class I	http://www.genenames.org/genefamilies/myosin#MYOI
+MYOIII	Myosins / Myosin superfamily : Class III	http://www.genenames.org/genefamilies/myosin#MYOIII
+MYOIX	Myosins / Myosin superfamily : Class IX	http://www.genenames.org/genefamilies/myosin#MYOIX
+MYOV	Myosins / Myosin superfamily : Class V	http://www.genenames.org/genefamilies/myosin#MYOV
+MYOVI	Myosins / Myosin superfamily : Class VI	http://www.genenames.org/genefamilies/myosin#MYOVI
+MYOVII	Myosins / Myosin superfamily : Class VII	http://www.genenames.org/genefamilies/myosin#MYOVII
+MYOX	Myosins / Myosin superfamily : Class X	http://www.genenames.org/genefamilies/myosin#MYOX
+MYOXIX	Myosins / Myosin superfamily : Class XIX	http://www.genenames.org/genefamilies/myosin#MYOXIX
+MYOXV	Myosins / Myosin superfamily : Class XV	http://www.genenames.org/genefamilies/myosin#MYOXV
+MYOXVI	Myosins / Myosin superfamily : Class XVI	http://www.genenames.org/genefamilies/myosin#MYOXVI
+MYOXVIII	Myosins / Myosin superfamily : Class XVIII	http://www.genenames.org/genefamilies/myosin#MYOXVIII
+N7TM	GPCR / Unclassified : Non signalling 7TM receptors	http://www.genenames.org/genefamilies/GPCRU#N7TM
+NAA	N(alpha)-acetyltransferase subunits	http://www.genenames.org/genefamilies/NAA
+NALCN	Ion channels / Sodium leak channels, non-selective	http://www.genenames.org/genefamilies/NALCN
+NBPF	neuroblastoma breakpoint family	http://www.genenames.org/genefamilies/NBPF
+NECAB	N-terminal EF-hand calcium binding proteins	http://www.genenames.org/genefamilies/NECAB
+NFAT	Nuclear factor of activated T-cells	http://www.genenames.org/genefamilies/NFAT
+NKAIN	Na+/K+ transporting ATPase interacting	http://www.genenames.org/genefamilies/NKAIN
+NKL	Homeoboxes / ANTP class : NKL subclass	http://www.genenames.org/genefamilies/homeobox#NKL
+NLR	Nucleotide-binding domain and leucine rich repeat containing	http://www.genenames.org/genefamilies/NLR
+NMUR	GPCR / Class A : Neuromedin U receptors	http://www.genenames.org/genefamilies/GPCRA#NMUR
+NPBWR	GPCR / Class A : Neuropeptide receptors : W/B	http://www.genenames.org/genefamilies/GPCRA#NPR#NPBWR
+NPFFR	GPCR / Class A :  Neuropeptide receptors : FF/AF	http://www.genenames.org/genefamilies/GPCRA#NPR#NPFFR
+NPSR	GPCR / Class A : Neuropeptide receptors : S	http://www.genenames.org/genefamilies/GPCRA#NPR#NPSR
+NPYR	GPCR / Class A : Neuropeptide receptors : Y	http://www.genenames.org/genefamilies/GPCRA#NPR#NPYR
+NR	Nuclear hormone receptors	http://www.genenames.org/genefamilies/NR
+NSUN	NOP2/Sun domain containing	http://www.genenames.org/genefamilies/NSUN
+NTN	Netrins	http://www.genenames.org/genefamilies/NTN
+NTSR	GPCR / Class A : Neurotensin receptors	http://www.genenames.org/genefamilies/GPCRA#NTSR
+NUDT	Nudix motif containing	http://www.genenames.org/genefamilies/NUDT
+O7TM	GPCR / Unclassified : 7TM orphan receptors	http://www.genenames.org/genefamilies/GPCRU#O7TM
+OPN	GPCR / Class A : Opsin receptors	http://www.genenames.org/genefamilies/GPCRA#OPN
+OPR	GPCR / Class A : Opioid receptors	http://www.genenames.org/genefamilies/GPCRA#OPR
+OR1	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR1
+OR10	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR10
+OR11	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR11
+OR12	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR12
+OR13	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR13
+OR14	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR14
+OR2	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR2
+OR3	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR3
+OR4	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR4
+OR5	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR5
+OR51	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR51
+OR52	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR52
+OR55	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR55
+OR56	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR56
+OR6	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR6
+OR7	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR7
+OR8	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR8
+OR9	GPCR / Class A : Olfactory receptors	http://www.genenames.org/genefamilies/OR#OR9
+ORAI	ORAI calcium release-activated calcium modulators	http://www.genenames.org/genefamilies/ORAI
+OSBP	Oxysterol binding proteins	http://www.genenames.org/genefamilies/OSBP
+OTUD	OTU domain containing	http://www.genenames.org/genefamilies/OTUD
+P2R	Purinergic receptors	http://www.genenames.org/genefamilies/P2R
+P2RX	Ligand-gated ion channels / Purinergic receptors, ionotropic	http://www.genenames.org/genefamilies/LGIC#P2RX
+P2RY	GPCR / Class A : Purinergic receptors, P2Y	http://www.genenames.org/genefamilies/GPCRA#P2RY
+PADI	Peptidyl arginine deiminases	http://www.genenames.org/genefamilies/PADI
+PANX	Ion channels / Pannexins	http://www.genenames.org/genefamilies/PANX
+PAR1	Pseudoautosomal regions / PAR1	http://www.genenames.org/genefamilies/PAR#PAR1
+PAR2	Pseudoautosomal regions / PAR2	http://www.genenames.org/genefamilies/PAR#PAR2
+PARK	Parkinson disease	http://www.genenames.org/genefamilies/PARK
+PARP	Poly (ADP-ribose) polymerases	http://www.genenames.org/genefamilies/PARP
+PARV	Parvins	http://www.genenames.org/genefamilies/PARV
+PATE	PATE family	http://www.genenames.org/genefamilies/PATE
+PATP	ATPases / P-type	http://www.genenames.org/genefamilies/ATP#PATP
+PAX	Paired boxes	http://www.genenames.org/genefamilies/PAX
+PCDHC	Cadherins / Protocadherins : Clustered	http://www.genenames.org/genefamilies/CDH#PCDHC
+PCDHN	Cadherins / Protocadherins : Non-clustered	http://www.genenames.org/genefamilies/CDH#PCDHN
+PCGF	Polycomb group ring fingers	http://www.genenames.org/genefamilies/PCGF
+PDE	Phosphodiesterases	http://www.genenames.org/genefamilies/PDE
+PDI	Protein disulfide isomerases	http://www.genenames.org/genefamilies/PDI
+PELI	Pellino homologs	http://www.genenames.org/genefamilies/PELI
+PHACTR	Phosphatase and actin regulators	http://www.genenames.org/genefamilies/PHACTR
+PHF	Zinc fingers, PHD-type	http://www.genenames.org/genefamilies/PHF
+PIG	Phosphatidylinositol glycan anchor biosynthesis	http://www.genenames.org/genefamilies/PIG
+PIRC	ncRNAs / Piwi-interacting RNA clusters	http://www.genenames.org/rna/PIRC
+PLEKH	Pleckstrin homology (PH) domain containing	http://www.genenames.org/genefamilies/PLEKH
+PLIN	Perilipins	http://www.genenames.org/genefamilies/PLIN
+PLXN	Plexins	http://www.genenames.org/genefamilies/PLXN
+PNMA	Paraneoplastic Ma antigens	http://www.genenames.org/genefamilies/PNMA
+PNPLA	Patatin-like phospholipase domain containing	http://www.genenames.org/genefamilies/PNPLA
+POL	DNA polymerases	http://www.genenames.org/genefamilies/POL
+POLR	RNA polymerase subunits	http://www.genenames.org/genefamilies/POLR
+PON	Paraoxonases	http://www.genenames.org/genefamilies/PON
+POTE	POTE ankyrin domain containing	http://www.genenames.org/genefamilies/POTE
+POU	Homeoboxes / POU class	http://www.genenames.org/genefamilies/homeobox#POU
+PPM	Serine/threonine phosphatases / Protein phosphatases, Mg2+/Mn2+ dependent	http://www.genenames.org/genefamilies/PPP-PPM-CTD#PPM
+PPP	Serine/threonine phosphatases / Protein phosphatase, catalytic subunits	http://www.genenames.org/genefamilies/PPP-PPM-CTD#PPP
+PPP1R	Serine/threonine phosphatases / Protein phosphatase 1, regulatory subunits	http://www.genenames.org/genefamilies/PPP-PPM-CTD#PPP1R
+PPP2R	Serine/threonine phosphatases / Protein phosphatase 2, regulatory subunits	http://www.genenames.org/genefamilies/PPP-PPM-CTD#PPP2R
+PPP3R	Serine/threonine phosphatases / Protein phosphatase 3, regulatory subunits	http://www.genenames.org/genefamilies/PPP-PPM-CTD#PPP3R
+PPP4R	Serine/threonine phosphatases / Protein phosphatase 4, regulatory subunits	http://www.genenames.org/genefamilies/PPP-PPM-CTD#PPP4R
+PPP6R	Serine/threonine phosphatases / Protein phosphatase 6, regulatory subunits	http://www.genenames.org/genefamilies/PPP-PPM-CTD#PPP6R
+PRD	Homeoboxes / PRD class	http://www.genenames.org/genefamilies/homeobox#PRD
+PRMT	Protein arginine methyltransferases	http://www.genenames.org/genefamilies/PRMT
+PROKR	GPCR / Class A : Prokineticin receptors	http://www.genenames.org/genefamilies/GPCRA#PROKR
+PROX	Homeoboxes / PROS class	http://www.genenames.org/genefamilies/homeobox#PROX
+PRRT	Proline-rich transmembrane proteins	http://www.genenames.org/genefamilies/PRRT
+PRSS	Serine peptidases / Serine peptidases	http://www.genenames.org/genefamilies/PRSS#PRSS
+PSM	Proteasome (prosome, macropain) subunits	http://www.genenames.org/genefamilies/PSM
+PTAFR	GPCR / Class A : Platelet-activating factor receptors	http://www.genenames.org/genefamilies/GPCRA#PTAFR
+PTAR	Prenyltransferase alpha subunit repeat containing	http://www.genenames.org/genefamilies/PTAR
+PTGR	GPCR / Class A : Prostanoid receptors	http://www.genenames.org/genefamilies/GPCRA#PTGR
+PTHNR	GPCR / Class B : Parathyroid hormone receptors	http://www.genenames.org/genefamilies/GPCRB#PTHNR
+PTP2	Protein tyrosine phosphatases / Class II Cys-based PTPs	http://www.genenames.org/genefamilies/PTP#PTP2
+PTP3	Protein tyrosine phosphatases / Class III Cys-based PTPs	http://www.genenames.org/genefamilies/PTP#PTP3
+PTPE	Protein tyrosine phosphatases / Asp-based PTPs	http://www.genenames.org/genefamilies/PTP#PTPE
+PTPN	Protein tyrosine phosphatases / Class I Cys-based PTPs : Non-receptor	http://www.genenames.org/genefamilies/PTP#PTPN
+PTPR	Protein tyrosine phosphatases / Class I Cys-based PTPs : Transmembrane receptor-like	http://www.genenames.org/genefamilies/PTP#PTPR
+PYG	Glycogen phosphorylases	http://www.genenames.org/genefamilies/PYG
+RAB	RAB, member RAS oncogene	http://www.genenames.org/genefamilies/RAB
+RAMP	Receptor (G protein-coupled) activity modifying proteins	http://www.genenames.org/genefamilies/RAMP
+RBM	RNA binding motif (RRM) containing	http://www.genenames.org/genefamilies/RBM
+REEP	Receptor accessory proteins	http://www.genenames.org/genefamilies/REEP
+RFAPR	GPCR / Class A : RF amide peptide receptors	http://www.genenames.org/genefamilies/GPCRA#RFAPR
+RGS	Regulators of G-protein signaling	http://www.genenames.org/genefamilies/RGS
+RIH	Histones / Replication-independent	http://www.genenames.org/genefamilies/histones#RIH
+RNASE	Ribonucleases, RNase A	http://www.genenames.org/genefamilies/RNASE
+RNF	RING-type (C3HC4) zinc fingers	http://www.genenames.org/genefamilies/RNF
+RNY	Y RNAs (Ro-associated)	http://www.genenames.org/rna/RNY
+RPL	L ribosomal proteins	http://www.genenames.org/genefamilies/RPL
+RPS	S ribosomal proteins	http://www.genenames.org/genefamilies/RPS
+RPUSD	RNA pseudouridylate synthase domain containing	http://www.genenames.org/genefamilies/RPUSD
+RRNA	ncRNAs / Ribosomal RNA genes	http://www.genenames.org/rna/RRNA
+RTP	Receptor transporter proteins	http://www.genenames.org/genefamilies/RTP
+RVNR	GPCR / Class A : Resolvin receptors	http://www.genenames.org/genefamilies/GPCRA#RVNR
+RXFP	GPCR / Class A : Relaxin family peptide receptors	http://www.genenames.org/genefamilies/GPCRA#RXFP
+RYR	Ion channels / Ryanodine receptors	http://www.genenames.org/genefamilies/RYR
+S100	S100 calcium binding proteins	http://www.genenames.org/genefamilies/S100
+S1PR	GPCR / Class A : Lysophospholipid receptors : Sphingosine 1-phosphate	http://www.genenames.org/genefamilies/GPCRA#LPLR#S1PR
+SAMD	Sterile alpha motif (SAM) domain containing	http://www.genenames.org/genefamilies/SAMD
+SASH	SAM and SH3 domain containing	http://www.genenames.org/genefamilies/SASH
+SC	Sodium channels	http://www.genenames.org/genefamilies/SC
+SCAMP	Secretory carrier membrane proteins	http://www.genenames.org/genefamilies/SCAMP
+SCARNA	ncRNAs / Small nucleolar RNAs : Small cajal body-specific	http://www.genenames.org/rna/SNORNA
+SCGB	Secretoglobins	http://www.genenames.org/genefamilies/SCGB
+SCN	Voltage-gated ion channels / Sodium channels	http://www.genenames.org/genefamilies/VGIC#SCN
+SCNN	Ion channels / Sodium channel, nonvoltage-gated	http://www.genenames.org/genefamilies/SCNN
+SDC	Proteoglycans / Cell Surface : Syndecans	http://www.genenames.org/genefamilies/proteoglycan#SDC
+SDRA	Short chain dehydrogenase/reductase superfamily / Atypical members	http://www.genenames.org/genefamilies/SDR#SDRA
+SDRC1	Short chain dehydrogenase/reductase superfamily / Classical SDR fold cluster 1	http://www.genenames.org/genefamilies/SDR#SDRC1
+SDRC2	Short chain dehydrogenase/reductase superfamily / Classical SDR fold cluster 2	http://www.genenames.org/genefamilies/SDR#SDRC2
+SDRC3	Short chain dehydrogenase/reductase superfamily / Classical SDR fold cluster 3	http://www.genenames.org/genefamilies/SDR#SDRC3
+SDRE	Short chain dehydrogenase/reductase superfamily / Extended SDR fold	http://www.genenames.org/genefamilies/SDR#SDRE
+SEMA	Semaphorins	http://www.genenames.org/genefamilies/SEMA
+SEPT	Septins	http://www.genenames.org/genefamilies/SEPT
+SERPIN	Serine (or cysteine) peptidase inhibitors	http://www.genenames.org/genefamilies/SERPIN
+SFRP	Secreted frizzled-related proteins	http://www.genenames.org/genefamilies/SFRP
+SFXN	Sideroflexins	http://www.genenames.org/genefamilies/SFXN
+SGSM	Small G protein signaling modulators	http://www.genenames.org/genefamilies/SGSM
+SGST	Glutathione S-transferases / Soluble	http://www.genenames.org/genefamilies/GST#SGST
+SH2D	SH2 domain containing	http://www.genenames.org/genefamilies/SH2D
+SHISA	Shisa homologs	http://www.genenames.org/genefamilies/SHISA
+SIGLEC	Sialic acid binding Ig-like lectins	http://www.genenames.org/genefamilies/SIGLEC
+SIRP	Signal-regulatory proteins	http://www.genenames.org/genefamilies/SIRP
+SIX	Homeoboxes / SINE class	http://www.genenames.org/genefamilies/homeobox#SIX
+SKOR	SKI transcriptional corepressors	http://www.genenames.org/genefamilies/SKOR
+SLC	Solute carriers	http://www.genenames.org/genefamilies/SLC
+SLRR	Proteoglycans / Extracellular Matrix : Small leucine-rich repeats	http://www.genenames.org/genefamilies/proteoglycan#SLRR
+SMAD	SMADs	http://www.genenames.org/genefamilies/SMAD
+SMC	Structural maintenance of chromosomes proteins	http://www.genenames.org/genefamilies/SMC
+SNAI	Snail homologs	http://www.genenames.org/genefamilies/SNAI
+SNORA	ncRNAs / Small nucleolar RNAs : H/ACA box containing	http://www.genenames.org/rna/SNORNA
+SNORD	ncRNAs / Small nucleolar RNAs : C/D box containing	http://www.genenames.org/rna/SNORNA
+SNX	Sorting nexins	http://www.genenames.org/genefamilies/SNX
+SOCS	Suppressors of cytokine signaling	http://www.genenames.org/genefamilies/SOCS
+SOX	SRY (sex determining region Y)-boxes	http://www.genenames.org/genefamilies/SOX
+SP	Specificity protein transcription factors	http://www.genenames.org/genefamilies/SP
+SPDY	Speedy homologs	http://www.genenames.org/genefamilies/SPDY
+SPINK	Serine peptidase inhibitors, Kazal type	http://www.genenames.org/genefamilies/SPINK
+SRSF	Serine/arginine-rich splicing factors	http://www.genenames.org/genefamilies/SRSF
+SSTR	GPCR / Class A : Somatostatin receptors	http://www.genenames.org/genefamilies/GPCRA#SSTR
+ST3G	Sialyltransferases	http://www.genenames.org/genefamilies/ST3G
+SULT	Sulfotransferases, cytosolic	http://www.genenames.org/genefamilies/SULT
+SULTM	Sulfotransferases, membrane-bound	http://www.genenames.org/genefamilies/SULTM
+SYT	Synaptotagmins	http://www.genenames.org/genefamilies/SYT
+StARD	StAR-related lipid transfer (START) domain containing	http://www.genenames.org/genefamilies/STARD
+TAAR	GPCR / Class A : Trace amine associated receptors	http://www.genenames.org/genefamilies/GPCRA#TAAR
+TACR	GPCR / Class A : Tachykinin receptors	http://www.genenames.org/genefamilies/GPCRA#TACR
+TALE	Homeoboxes / TALE class	http://www.genenames.org/genefamilies/homeobox#TALE
+TAS1R	Taste receptors / Type 1	http://www.genenames.org/genefamilies/TASNR#TAS1R
+TAS2R	Taste receptors / Type 2	http://www.genenames.org/genefamilies/TASNR#TAS2R
+TASNR	GPCR / Unclassified : Taste receptors	http://www.genenames.org/genefamilies/GPCRU#TASNR
+TBX	T-boxes	http://www.genenames.org/genefamilies/TBX
+TCTN	Tectonic proteins	http://www.genenames.org/genefamilies/TCTN
+TDRD	Tudor domain containing	http://www.genenames.org/genefamilies/TDRD
+TFIIH	General transcription factor IIH complex subunits	http://www.genenames.org/genefamilies/TFIIH
+TGM	Transglutaminases	http://www.genenames.org/genefamilies/TGM
+THAP	THAP (C2CH-type zinc finger) domain containing	http://www.genenames.org/genefamilies/THAP
+THOC	THO complex subunits	http://www.genenames.org/genefamilies/THOC
+TMCC	Transmembrane and coiled-coil domain containing	http://www.genenames.org/genefamilies/TMCC
+TMPRSS	Serine peptidases / Transmembrane	http://www.genenames.org/genefamilies/PRSS#TMPRSS
+TNFRSF	Tumor necrosis factor receptor superfamily	http://www.genenames.org/genefamilies/TNFRSF
+TNFSF	Tumor necrosis factor (ligand) superfamily	http://www.genenames.org/genefamilies/TNFSF
+TNRC	Trinucleotide (CAG) repeat containing	http://www.genenames.org/genefamilies/TNRC
+TPCN	Voltage-gated ion channels / Two-pore channels	http://www.genenames.org/genefamilies/VGIC#TPCN
+TPM	Tropomyosins	http://www.genenames.org/genefamilies/TPM
+TRAPPC	Trafficking protein particle complex	http://www.genenames.org/genefamilies/TRAPPC
+TRAS	T cell receptors / TRA locus	http://www.genenames.org/genefamilies/TR#TRAS
+TRB	T cell receptors / TRB locus	http://www.genenames.org/genefamilies/TR#TRB
+TRBO	T cell receptors / TRB orphons	http://www.genenames.org/genefamilies/TR#TRBO
+TRD	T cell receptors / TRD locus	http://www.genenames.org/genefamilies/TR#TRD
+TRG	T cell receptors / TRG locus	http://www.genenames.org/genefamilies/TR#TRG
+TRIM	Tripartite motif containing / Tripartite motif containing	http://www.genenames.org/genefamilies/TRIM#TRIM
+TRIMP	Triparite motif-containing / Pseudogenes	http://www.genenames.org/genefamilies/TRIM#TRIMP
+TRNA	ncRNAs / Transfer RNA, cytoplasmic	http://www.genenames.org/rna/TRNA#TRNA
+TRP	Voltage-gated ion channels / Transient receptor potential cation channels	http://www.genenames.org/genefamilies/VGIC#TRP
+TSEN	tRNA splicing endonuclease subunits	http://www.genenames.org/genefamilies/TSEN
+TSHZ	Teashirt zinc fingers	http://www.genenames.org/genefamilies/TSHZ
+TSPAN	Tetraspanins	http://www.genenames.org/genefamilies/TSPAN
+TTC	Tetratricopeptide (TTC) repeat domain containing	http://www.genenames.org/genefamilies/TTC
+TTLL	Tubulin tyrosine ligase-like family	http://www.genenames.org/genefamilies/TTLL
+TUB	Tubulins	http://www.genenames.org/genefamilies/TUB
+UBE1	Ubiquitin-like modifier activating enzymes	http://www.genenames.org/genefamilies/UBE1
+UBE2	Ubiquitin-conjugating enzymes E2	http://www.genenames.org/genefamilies/UBE2
+UBOX	U-box domain containing	http://www.genenames.org/genefamilies/UBOX
+UBQLN	Ubiquilin family	http://www.genenames.org/genefamilies/UBQLN
+UBR	Ubiquitin protein ligase E3 component n-recognins	http://www.genenames.org/genefamilies/UBR
+UBXN	UBX domain containing	http://www.genenames.org/genefamilies/UBXN
+UGT	UDP glucuronosyltransferases	http://www.genenames.org/genefamilies/UGT
+USP	Ubiquitin-specific peptidases	http://www.genenames.org/genefamilies/USP
+VAMP	Vesicle-associated membrane proteins	http://www.genenames.org/genefamilies/VAMP
+VATP	ATPases / V-type	http://www.genenames.org/genefamilies/ATP#VATP
+VAULT	Vault RNAs (vtRNAs)	http://www.genenames.org/rna/VAULT
+VDAC	Voltage-dependent anion channels	http://www.genenames.org/genefamilies/VDAC
+VIPPACR	GPCR / Class B : VIP and PACAP (ADCYAP1) receptors	http://www.genenames.org/genefamilies/GPCRB#VIPPACR
+VN1R	Vomeronasal receptors / Type 1	http://www.genenames.org/genefamilies/VNR#VN1R
+VN1RU	GPCR / Unclassified : Vomeronasal receptors, type 1	http://www.genenames.org/genefamilies/GPCRU#VN1RU
+VN2R	Vomeronasal receptors / Type 2	http://www.genenames.org/genefamilies/VNR#VN2R
+VNN	Vanins	http://www.genenames.org/genefamilies/VNN
+VSET	Immunoglobulin superfamily / V-set domain containing	http://www.genenames.org/genefamilies/VSET
+WASH	WAS protein homologs	http://www.genenames.org/genefamilies/WASH
+WDR	WD repeat domain containing	http://www.genenames.org/genefamilies/WDR
+WFDC	WAP four-disulfide core domain containing	http://www.genenames.org/genefamilies/WFDC
+WNT	Wingless-type MMTV integration sites	http://www.genenames.org/genefamilies/WNT
+WWC	WW, C2 and coiled-coil domain containing	http://www.genenames.org/genefamilies/WWC
+XCR	GPCR / Class A : Chemokine receptors : X-C motif	http://www.genenames.org/genefamilies/GPCRA#CR#XCR
+XPO	Exportins	http://www.genenames.org/genefamilies/XPO
+YIPF	Yip1 domain family	http://www.genenames.org/genefamilies/YIPF
+ZACN	Ligand-gated ion channels / Zinc activated channels	http://www.genenames.org/genefamilies/LGIC#ZACN
+ZBED	Zinc fingers, BED-type	http://www.genenames.org/genefamilies/ZBED
+ZC2HC	Zinc fingers, C2HC-type containing	http://www.genenames.org/genefamilies/ZC2HC
+ZC3H	Zinc fingers, CCCH-type domain containing	http://www.genenames.org/genefamilies/ZC3H
+ZC3HC	Zinc fingers, C3HC-type	http://www.genenames.org/genefamilies/C3HC
+ZC4H2	Zinc fingers	http://www.genenames.org/genefamilies/ZF
+ZCCHC	Zinc fingers, CCHC domain containing	http://www.genenames.org/genefamilies/ZCCHC
+ZDBF	Zinc fingers, DBF-type	http://www.genenames.org/genefamilies/ZDBF
+ZDHHC	Zinc fingers, DHHC-type	http://www.genenames.org/genefamilies/ZDHHC
+ZFAND	Zinc fingers, AN1-type domain containing	http://www.genenames.org/genefamilies/ZFAND
+ZFC3H1	Zinc finger, C3H1-type containing	http://www.genenames.org/genefamilies/ZFC3H1
+ZFHX	Homeoboxes / ZF class	http://www.genenames.org/genefamilies/homeobox#ZFHX
+ZFYVE	Zinc fingers, FYVE domain containing	http://www.genenames.org/genefamilies/ZFYVE
+ZMAT	Zinc fingers, matrin-type	http://www.genenames.org/genefamilies/ZMAT
+ZMIZ	Zinc fingers, MIZ-type	http://www.genenames.org/genefamilies/ZMIZ
+ZMYM	Zinc fingers, MYM type	http://www.genenames.org/genefamilies/ZMYM
+ZMYND	Zinc fingers, MYND-type	http://www.genenames.org/genefamilies/ZMYND
+ZNF	Zinc fingers, C2H2-type	http://www.genenames.org/genefamilies/ZNF
+ZNHIT	Zinc fingers, HIT-type	http://www.genenames.org/genefamilies/ZNHIT
+ZP	Zona pellucida glycoproteins	http://www.genenames.org/genefamilies/ZP
+ZRANB	Zinc fingers, RAN-binding domain containing	http://www.genenames.org/genefamilies/ZRANB
+ZSWIM	Zinc fingers, SWIM-type	http://www.genenames.org/genefamilies/ZSWIM
+ZYG11	ZYG11 cell cycle regulator family	http://www.genenames.org/genefamilies/ZYG11
+ZZZ	Zinc fingers, ZZ-type	http://www.genenames.org/genefamilies/ZZZ
+aaRS1	Aminoacyl tRNA synthetases / Class I	http://www.genenames.org/genefamilies/AARS#AARS1
+aaRS2	Aminoacyl tRNA synthetases / Class II	http://www.genenames.org/genefamilies/AARS#AARS2
+bHLH	Basic helix-loop-helix proteins	http://www.genenames.org/genefamilies/BHLH
+bZIP	basic leucine zipper proteins	http://www.genenames.org/genefamilies/BZIP
+bloodgroup	Blood group antigens	http://www.genenames.org/genefamilies/blood-group
+comI	Mitochondrial respiratory chain complex / Complex I	http://www.genenames.org/genefamilies/mitocomplex#comI
+comII	Mitochondrial respiratory chain complex / Complex II	http://www.genenames.org/genefamilies/mitocomplex#comII
+comIII	Mitochondrial respiratory chain complex / Complex III	http://www.genenames.org/genefamilies/mitocomplex#comIII
+comIV	Mitochondrial respiratory chain complex / Complex IV	http://www.genenames.org/genefamilies/mitocomplex#comIV
+complement	Complement system	http://www.genenames.org/genefamilies/complement-system
+scRNA	ncRNAs / Small cytoplasmic RNAs	http://www.genenames.org/rna/scRNA
+snRNA	ncRNAs / Small nuclear RNAs	http://www.genenames.org/rna/snRNA
