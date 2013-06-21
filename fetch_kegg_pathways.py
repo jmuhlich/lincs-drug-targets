@@ -4,10 +4,6 @@ import uniprot_utils as uu
 import json as js
 import fileinput as fi
 
-# (from informatics mtg 20130619W)
-# drug	drug_moniker	protein	protein_moniker	reference	measurement	value	unit
-# HMSL12345	FOO	P67890	BAR	KEGG	IC50	9.8	nm
-
 
 def uniq(seq):
     seen = set()
