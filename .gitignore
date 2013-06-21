@@ -1,3 +1,10 @@
+### project-specific stuff
+
+drugbank.xml
+
+
+### general python stuff
+
 *.py[cod]
 
 # C extensions
