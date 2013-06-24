@@ -6,7 +6,7 @@ import hashlib
 
 url = 'http://www.drugbank.ca/system/downloads/current/drugbank.xml.zip'
 datafile_name = 'drugbank.xml'
-datafile_sha1 = '910619452ca3fe9659c9b893f368bca35ff268ab'
+datafile_sha1 = '0f4fad996da52a6eb05d9867b1ed092d6171f333'
 
 def verify_hash():
     try:
@@ -38,4 +38,5 @@ if verify_hash():
 else:
     print "Downloading file..."
     fetch_datafile()
-    print "Done."
+    print "Done downloading. Rechecking file..."
+    verify_hash()
