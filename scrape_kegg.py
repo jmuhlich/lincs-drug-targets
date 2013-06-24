@@ -4,14 +4,16 @@ import time as ti
 import random as rn
 import re
 from bs4 import BeautifulSoup as bs
+import fileinput as fi
+
+WAIT = 15
 
 drug2id = {}
 drugs = []
-with open('drugs.tsv') as fh:
-    for line in fh:
-        id_, drug = line.rstrip('\r\n').split('\t')
-        drug2id[drug] = id_
-        drugs.append(drug)
+for line in fi.input():
+    id_, drug = line.rstrip('\r\n').split('\t')
+    drug2id[drug] = id_
+    drugs.append(drug)
 
 url_template = ('http://www.kegg.jp/kegg-bin/search?'
                 'q=%s&display=drug&from=drug&drug=&lang=en')
@@ -27,7 +29,7 @@ for d in drugs:
     print '%s\t%s\t' % (drug2id[d], d),
     html = ul2.urlopen(url_template % ul.quote(d)).read()
 
-    ti.sleep(15 + rn.randint(0, 15))
+    ti.sleep(WAIT + rn.randint(0, WAIT))
     if 'No data found' in html:
         print
         continue
