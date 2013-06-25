@@ -1,11 +1,6 @@
 import collections
 import lxml.etree
 
-ns = 'http://drugbank.ca'
-
-def qname(tag):
-    return lxml.etree.QName(ns, tag).text
-
 def xpath(obj, path, single=True):
     result = obj.xpath(path, namespaces={'d': ns})
     if single:
@@ -25,41 +20,52 @@ drug_info = []
 pubchem_cids = []
 partner_to_uniprot = {}
 
-for event, element in lxml.etree.iterparse(datafile):
-    # Second clause skips 'drug' elements in drug-interaction sub-elements. It's
+ns = 'http://drugbank.ca'
+
+qnames = dict((tag, lxml.etree.QName(ns, tag).text)
+              for tag in ('drug', 'drug-interaction', 'partner'))
+
+for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
+    # We need to skip 'drug' elements in drug-interaction sub-elements. It's
     # unfortunate they re-used this tag name.
-    if element.tag == qname('drug') and \
-           element.getparent().tag != qname('drug-interaction'):
-        drugbank_id = xpath(element, 'd:drugbank-id/text()')
-        name = xpath(element, 'd:name/text()')
-        synonyms = xpath(element, 'd:synonyms/d:synonym/text()', single=False)
-        molecular_formula = xpath(element, './/d:property'
-                                  '[d:kind="Molecular Formula"]/d:value/text()')
-        kegg_drug_id = xpath(element, './/d:external-identifier'
-                             '[d:resource="KEGG Drug"]/d:identifier/text()')
-        pubchem_cid = xpath(element, './/d:external-identifier'
-                            '[d:resource="PubChem Compound"]/d:identifier/text()')
-        partner_ids = xpath(element, 'd:targets/d:target/@partner', single=False)
-        if kegg_drug_id:
-            drug_targets[kegg_drug_id] = partner_ids
-        drug_info.append(collections.OrderedDict((
-                    ('name', name),
-                    ('synonyms', ';'.join(synonyms)),
-                    ('cid', pubchem_cid),
-                    ('mf', molecular_formula),
-                    )))
-        element.clear()
-    elif element.tag == qname('partner'):
-        partner_id = element.get('id')
-        uniprot_id = xpath(element, './/d:external-identifier'
-                           '[d:resource="UniProtKB"]/d:identifier/text()')
-        partner_to_uniprot[partner_id] = uniprot_id
-        element.clear()
+    if element.getparent().tag == qnames['drug-interaction']:
+        continue
+    drugbank_id = xpath(element, 'd:drugbank-id/text()')
+    name = xpath(element, 'd:name/text()')
+    synonyms = xpath(element, 'd:synonyms/d:synonym/text()', single=False)
+    molecular_formula = xpath(element, './/d:property'
+                              '[d:kind="Molecular Formula"]/d:value/text()')
+    kegg_drug_id = xpath(element, './/d:external-identifier'
+                         '[d:resource="KEGG Drug"]/d:identifier/text()')
+    pubchem_cid = xpath(element, './/d:external-identifier'
+                        '[d:resource="PubChem Compound"]/d:identifier/text()')
+    partner_ids = xpath(element, 'd:targets/d:target/@partner', single=False)
+    if kegg_drug_id:
+        drug_targets[kegg_drug_id] = partner_ids
+    drug_info.append(collections.OrderedDict((
+                ('name', name),
+                ('synonyms', ';'.join(synonyms)),
+                ('cid', pubchem_cid),
+                ('mf', molecular_formula),
+                )))
+    element.clear()
+
+# Turns out it's much faster to do a second iterparse loop with a different
+# tag argument than to do just one iterparse loop with a conditional on the
+# tag name. The lxml internals are much more efficient at filtering tags
+# than we are, and the disk I/O and buffer cache impact are negligible. It
+# would be nice if the tag argument could accept a list of tag names...
+datafile.seek(0)
+for event, element in lxml.etree.iterparse(datafile, tag=qnames['partner']):
+    partner_id = element.get('id')
+    uniprot_id = xpath(element, './/d:external-identifier'
+                       '[d:resource="UniProtKB"]/d:identifier/text()')
+    partner_to_uniprot[partner_id] = uniprot_id
+    element.clear()
 
 for drugbank_id, partner_ids in drug_targets.items():
     partner_ids[:] = [partner_to_uniprot[i] for i in partner_ids]
     partner_ids[:] = [i for i in partner_ids if i is not None]
-
 
 # Targets -- kegg_drug_id: [uniprot_ids]
 print '\n'.join(map(str, sorted(drug_targets.items())))
