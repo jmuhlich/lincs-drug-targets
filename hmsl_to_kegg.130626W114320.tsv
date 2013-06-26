@@ -1,0 +1,197 @@
+	HMSL10005	Tivozanib	D09683	Tivozanib
+	HMSL10005	Tivozanib	D10190	Tivozanib hydrochloride ; Tivozanib hydrochloride monohydrate
+	HMSL10008	Sorafenib	D06272	Nexavar ; Sorafenib tosilate ; Sorafenib tosylate
+	HMSL10008	Sorafenib	D08524	Sorafenib
+	HMSL10011	Alvocidib	D02880	Alvocidib hydrochloride
+	HMSL10011	Alvocidib	D09868	Alvocidib
+	HMSL10018	Neratinib	D08950	Neratinib
+	HMSL10020	Dasatinib ; Sprycel	D03658	Dasatinib
+	HMSL10020	Dasatinib ; Sprycel	D06414	Dasatinib ; Dasatinib hydrate ; Sprycel
+	HMSL10021	Tozasertib ; MK-0457	D08279	Tozasertib
+	HMSL10021	Tozasertib ; MK-0457	D08344	MK-0457 ; Tozasertib lactate
+	HMSL10023	Gleevec ; Glivec ; Imatinib	D01441	Gleevec ; Glivec ; Imatinib mesilate ; Imatinib mesylate
+	HMSL10023	Gleevec ; Glivec ; Imatinib	D08066	Glamox ; Imatinib
+	HMSL10027	Crizotinib	D09731	Crizotinib ; Xalkori
+	HMSL10032	Saracatinib	D09664	Saracatinib
+	HMSL10032	Saracatinib	D09665	Saracatinib difumarate
+	HMSL10042	Motesanib	D06678	AMG 706 ; Motesanib
+	HMSL10042	Motesanib	D08947	Motesanib diphosphate ; Motesanib phosphate
+	HMSL10051	Lapatinib ; Tykerb	D04024	Lapatinib ditosylate ; Lapatinib tosilate hydrate ; Tykerb
+	HMSL10051	Lapatinib ; Tykerb	D08108	Lapatinib
+	HMSL10052	Sirolimus ; Rapamycin	D00753	Rapamune ; Rapamycin ; Sirolimus
+x	HMSL10052	Sirolimus ; Rapamycin	D06068	Temsirolimus ; Torisel
+	HMSL10056	Selumetinib	D09666	Selumetinib
+	HMSL10056	Selumetinib	D10024	Selumetinib sulfate
+	HMSL10069	Enzastaurin	D04014	Enzastaurin hydrochloride
+	HMSL10097	Erlotinib	D04023	Erlotinib hydrochloride ; Tarceva
+	HMSL10097	Erlotinib	D07907	Erlotinib ; Tarceva
+	HMSL10098	Gefitinib	D01977	Gefitinib ; Iressa
+	HMSL10099	Nilotinib	D06413	Nilotinib hydrochloride hydrate ; Tasigna
+	HMSL10099	Nilotinib	D08953	Nilotinib
+	HMSL10102	Paclitaxel ; Taxol	D00491	Abraxane ; Paclitaxel ; Taxol
+	HMSL10102	Paclitaxel ; Taxol	D05333	Paclitaxel poliglumex
+x	HMSL10102	Paclitaxel ; Taxol	D00598	Betaxolol hydrochloride ; Betoptic ; Kerlone
+x	HMSL10102	Paclitaxel ; Taxol	D04710	Betaxon ; Levobetaxolol hydrochloride
+x	HMSL10102	Paclitaxel ; Taxol	D07526	Betaxolol ; Betaxolol
+x	HMSL10103	STS	D08528	Cofamix STS ; Spiramycin embonate
+	HMSL10114	Pazopanib hydrochloride ; Pazopanib	D05380	Pazopanib hydrochloride ; Votrient
+	HMSL10118	Amuvatinib	D09864	Amuvatinib
+	HMSL10118	Amuvatinib	D09865	Amuvatinib hydrochloride
+	HMSL10120	Canertinib	D03350	Canertinib dihydrochloride
+	HMSL10127	Dovitinib	D08907	Dovitinib lactate
+	HMSL10130	Masitinib	D10229	Masitinib
+	HMSL10131	Tivantinib	D10173	Tivantinib
+	HMSL10133	Afatinib	D09724	Afatinib
+	HMSL10133	Afatinib	D09733	Afatinib dimaleate ; Afatinib maleate
+	HMSL10138	Ruxolitinib	D09959	Ruxolitinib
+	HMSL10138	Ruxolitinib	D09960	Jakafi ; Ruxolitinib phosphate
+	HMSL10144	Olaparib	D09730	Olaparib
+	HMSL10145	Veliparib	D09692	Veliparib
+	HMSL10150	Ponatinib	D09950	Ponatinib
+	HMSL10150	Ponatinib	D09951	Iclusig ; Ponatinib hydrochloride
+	HMSL10157	Foretinib	D09618	Foretinib
+	HMSL10159	Pelitinib	D05399	Pelitinib
+	HMSL10169	Doramapimod	D03736	Doramapimod
+	HMSL10175	Sunitinib ; Sutent ; Sunitinib malate	D06402	Sunitinib malate ; Sutent
+	HMSL10175	Sunitinib ; Sutent ; Sunitinib malate	D08552	Sunitinib
+	HMSL10177	Brivanib	D08878	Brivanib alaninate
+	HMSL10177	Brivanib	D09589	Brivanib
+	HMSL10182	Linifanib	D09635	Linifanib
+	HMSL10189	Bosutinib	D03252	Bosutinib
+	HMSL10189	Bosutinib	D09728	Bosulif ; Bosutinib hydrate ; Bosutinib monohydrate
+	HMSL10194	Cabozantinib ; Cabozantinib S-malate	D10062	Cabozantinib
+	HMSL10194	Cabozantinib ; Cabozantinib S-malate	D10095	Cabozantinib s-malate ; Cometriq
+	HMSL10198	Vandetanib ; Caprelsa	D06407	Caprelsa ; Vandetanib
+	HMSL10222	Dacomitinib	D09883	Dacomitinib
+	HMSL10225	Regorafenib	D10137	Regorafenib hydrate ; Stivarga
+	HMSL10225	Regorafenib	D10138	Regorafenib
+	HMSL10226	Tasocitinib ; Tofacitinib	D09783	Tasocitinib citrate ; Tofacitinib citrate ; Xeljanz
+	HMSL10226	Tasocitinib ; Tofacitinib	D09970	Tasocitinib ; Tofacitinib
+	HMSL10230	Lestaurtinib	D04696	Lestaurtinib
+	HMSL10235	Everolimus	D02714	Afinitor ; Everolimus ; Votubia ; Zortress
+	HMSL10236	Tanespimycin	D06650	Tanespimycin
+	HMSL10237	Doxifluridine	D01309	Doxifluridine ; Furtulon
+	HMSL10238	5-FU ; Fluorouracil	D00584	5-FU ; Adrucil ; Carac ; Fluoroplex ; Fluorouracil
+	HMSL10238	5-FU ; Fluorouracil	D07974	Fluorouracil ; Fluorouracil sodium salt
+	HMSL10241	Bortezomib ; Velcade	D03150	Bortezomib ; Velcade
+	HMSL10242	Carboplatin	D01363	Carboplatin ; Paraplatin
+	HMSL10245	Cisplatin	D00275	Cisplatin ; Platinol
+	HMSL10246	Irinotecan ; CPT-11	D01061	CPT 11 ; CPT-11 ; Campto ; Irinotecan hydrochloride ; Irinotecan hydrochloride hydrate
+	HMSL10246	Irinotecan ; CPT-11	D08086	Biotecan ; Irinotecan
+	HMSL10247	Taxotere ; Docetaxel	D02165	Docetaxel ; Docetaxel hydrate ; Taxotere
+	HMSL10247	Taxotere ; Docetaxel	D07866	Docetaxel ; Docetaxel ; Taxotere
+	HMSL10248	Doxorubicin ; Adriamycin	D01275	Adriacin ; Adriamycin ; Doxil ; Doxorubicin hydrochloride ; Rubex
+	HMSL10248	Doxorubicin ; Adriamycin	D03899	ADR ; Adriblastina ; Doxorubicin
+	HMSL10249	Epirubicin ; Ellence	D02214	EPI ; Ellence ; Epirubicin hydrochloride
+	HMSL10249	Epirubicin ; Ellence	D07901	Epirubicin ; Farmorubicin
+	HMSL10250	Etoposide	D00125	Etoposide ; Vepesid
+	HMSL10250	Etoposide	D04107	Etopophos preservative free ; Etoposide phosphate
+	HMSL10252	Gemzar ; Gemcitabine	D01155	Gemcitabine hydrochloride ; Gemzar
+	HMSL10252	Gemzar ; Gemcitabine	D02368	Gemcitabine
+	HMSL10252	Gemzar ; Gemcitabine	D10222	Gemcitabine elaidate
+	HMSL10258	Boniva	D04486	Boniva ; Ibandronate sodium ; Ibandronate sodium hydrate ; Ibandronate sodium monohydrate
+	HMSL10260	Ispinesib	D04640	Ispinesib mesylate
+	HMSL10261	Ixabepilone	D04645	Ixabepilone ; Ixempra
+	HMSL10263	Panobinostat	D10019	Panobinostat lactate
+	HMSL10263	Panobinostat	D10319	Panobinostat
+	HMSL10264	Methotrexate	D00142	Methotrexate ; Mexate
+	HMSL10264	Methotrexate	D02115	Methotrexate sodium ; Trexall
+	HMSL10269	Eloxatin ; Oxaliplatin	D01790	Eloxatin ; Oxaliplatin
+	HMSL10272	Alimta ; Pemetrexed	D03828	Alimta ; Pemetrexed disodium
+	HMSL10272	Alimta ; Pemetrexed	D06503	Alimta ; Pemetrexed disodium heptahydrate ; Pemetrexed sodium hydrate
+	HMSL10272	Alimta ; Pemetrexed	D07472	Alimta ; Pemetrexed ; Pemetrexed
+	HMSL10275	Tamoxifen	D00966	Nolvadex ; Tamoxifen citrate
+	HMSL10275	Tamoxifen	D08559	Tamoplex ; Tamoxifen ; Tamoxifen
+	HMSL10277	Temsirolimus	D06068	Temsirolimus ; Torisel
+	HMSL10278	Topotecan	D02168	Hycamtin ; Nogitecan hydrochloride ; Topotecan hydrochloride
+	HMSL10278	Topotecan	D08618	Hycamtin ; Topotecan
+	HMSL10280	Triciribine	D06221	Triciribine phosphate
+	HMSL10281	Vinorelbine ; Navelbine	D01935	KW 2307 ; Navelbine ; Vinorelbine ditartrate ; Vinorelbine tartrate
+	HMSL10281	Vinorelbine ; Navelbine	D08680	Navelbine ; Vinorelbine
+	HMSL10282	Zolinza ; Vorinostat	D06320	Vorinostat ; Zolinza
+	HMSL10284	Dabrafenib	D10064	Dabrafenib
+	HMSL10284	Dabrafenib	D10104	Dabrafenib mesylate
+	HMSL10287	Dinaciclib	D09604	Dinaciclib
+	HMSL10292	Mitomycin C	D00208	MMC ; Mitomycin ; Mitomycin ; Mitomycin C ; Muamycin
+	HMSL10300	AZA ; Azacitidine ; Vidaza	D03021	Azacitidine ; Vidaza
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D00238	Azasan ; Azathioprine ; Imuran
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D00240	AZT ; Azactam ; Aztreonam
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D00379	Tolazamide ; Tolinase
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D00563	Mirtazapine ; Reflex ; Remeron
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D00655	Methazolamide ; Neptazane
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D00662	Azatadine maleate ; Optimine
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D00803	Diethylcarbamazine citrate ; Hetrazan
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01069	Cilazapril ; Cilazapril hydrate ; Inhibace
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01097	Lazabemide hydrochloride ; Tempium
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01132	Avage ; Fabior ; Tazarotene ; Tazorac
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01152	Oxetacaine ; Oxethazaine ; Strocain
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01158	Furazabol ; Miotolan
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01253	Clobazam ; Mystan ; Onfi
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01274	Tesaglitazar
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01276	Atazanavir sulfate ; Reyataz
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01399	Fentanyl citrate ; Fentora ; Lazanda ; Oralet
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01564	Rhythmy ; Rilmazafone hydrochloride ; Rilmazafone hydrochloride dihydrate ; Rilmazafone hydrochloride hydrate
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01594	Bendazac ; Iwazac
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01613	Azasetron hydrochloride ; Serotone
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01669	Tazanol ; Tazanolast
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01930	Freedox ; Tirilazad mesilate ; Tirilazad mesylate
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01971	Reglitazar
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D01975	Fentiazac
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D02173	Galantamine hydrobromide ; Razadyne ; Reminyl
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D02620	Azaperone ; Stresnil
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D02650	Clopipazan mesylate
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D02670	Mazapertine succinate
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D02948	Anitrazafen
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D02966	Apazone ; Azapropazone ; Prolixan
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D02972	Aptazapine maleate
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D03019	Azabon
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D03022	Azaclorzine hydrochloride
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D03023	Azaconazole
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D03024	Azacosterol hydrochloride
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D03025	Azalanstat dihydrochloride
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D03026	Azaloxan fumarate
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D03027	Azanator maleate
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D03028	Azanidazole
+x	HMSL10300	AZA ; Azacitidine ; Vidaza	D03029	Azaribine ; Triazure
+	HMSL10301	Decitabine ; Dacogen ; DAC	D03665	Dacogen ; Decitabine
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D00120	Clinoril ; Sulindac
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D00214	Actinomycin D ; Cosmegen ; Dactinomycin
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D00288	DTIC-Dome ; Dacarbazine
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D00443	Aldactone ; Spironolactone
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D01165	Dactil ; Piperidolate hydrochloride
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D01283	Carbenicillin indanyl sodium ; Carindacillin sodium ; Geocillin
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D01765	Miridacin ; Proglumetacin maleate
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D01943	Canrenoate potassium ; Potassium canrenoate ; Soldactone
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D03078	Bendacalol mesylate
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D03639	Daclizumab ; Zenapax
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D03734	Eldacimibe
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D04520	Indacrinone
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D05482	Pinacidil ; Pinacidil hydrate ; Pindac
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D07612	Clinit-n ; Sodium salamidacetate ; o-Carbamoylphenoxyacetic acid sodium salt
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D07621	CIPC ; Carbenicillin indanyl ; Carindacillin
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D07772	Dacarbazine ; Dacarbazine citrate
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D07773	Dacisteine ; Mucothiol
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D07831	Dihydrocodeine ; Remedacen
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D08308	Dacryoboraline ; Oxedrine tartrate
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D08896	Dacetuzumab
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D09318	Indacaterol
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D09319	Arcapta neohaler ; Indacaterol maleate
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D09647	Omadacycline
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D09750	Ipidacrine hydrochloride hydrate
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D09883	Dacomitinib
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D09940	Omadacycline tosylate
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D10065	Daclatasvir
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D10105	Daclatasvir dihydrochloride
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D10245	Bismuth subcitrate - tetracycline - metronidazole mixt ; Helidac ; Pylera
+x	HMSL10301	Decitabine ; Dacogen ; DAC	D10270	Aldactazide ; Spironolactone - hydrochlorothiazide mixt
+	HMSL10303	Iniparib	D09913	Iniparib
+	HMSL10304	Rucaparib	D10079	Rucaparib
+	HMSL10304	Rucaparib	D10157	Rucaparib phosphate
+	HMSL10310	Belinostat	D08870	Belinostat
+	HMSL10311	Entinostat	D09338	Entinostat
+	HMSL10312	Mocetinostat	D09357	Mocetinostat dihydrobromide
+	HMSL10312	Mocetinostat	D09641	Mocetinostat
+	HMSL10326	Tranylcypromine	D00826	Parnate ; Tranylcypromine sulfate
+	HMSL10326	Tranylcypromine	D08625	Parnate ; Tranylcypromine
+	HMSL10346	Valproic acid	D00399	Depakene ; Valproic acid
+	HMSL10346	Valproic acid	D08667	Calcium valproate ; Convulsofin ; Valproic acid calcium salt
