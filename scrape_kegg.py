@@ -12,8 +12,10 @@ drug2id = {}
 drugs = []
 for line in fi.input():
     id_, drug = line.rstrip('\r\n').split('\t')
-    drug2id[drug] = id_
-    drugs.append(drug)
+    if not drug in drug2id:
+        drug2id[drug] = set()
+        drugs.append(drug)
+    drug2id[drug].add(id_)
 
 url_template = ('http://www.kegg.jp/kegg-bin/search?'
                 'q=%s&display=drug&from=drug&drug=&lang=en')
@@ -26,13 +28,16 @@ def extract_id(a):
 
 
 for d in drugs:
-    print '%s\t%s\t' % (drug2id[d], d),
     html = ul2.urlopen(url_template % ul.quote(d)).read()
+    if 'No data found' in html:
+        ids = []
+    else:
+        soup = bs(html, 'lxml')
+        ids = [extract_id(a) for a in soup.findAll('a') if 'dr:' in a['href']]
+
+    kegg_drug_ids = '|'.join(sorted(ids))
+
+    for drug_id in sorted(drug2id[d]):
+        print '%s\t%s\t%s' % (drug_id, d, kegg_drug_ids)
 
     ti.sleep(WAIT + rn.randint(0, WAIT))
-    if 'No data found' in html:
-        print
-        continue
-    soup = bs(html, 'lxml')
-    ids = [extract_id(a) for a in soup.findAll('a') if 'dr:' in a['href']]
-    print '|'.join(ids)
