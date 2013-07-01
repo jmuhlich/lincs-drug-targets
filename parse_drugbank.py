@@ -25,6 +25,8 @@ ns = 'http://drugbank.ca'
 qnames = dict((tag, lxml.etree.QName(ns, tag).text)
               for tag in ('drug', 'drug-interaction', 'partner'))
 
+rec = collections.namedtuple('Record', 'id name synonyms cid mf')
+
 for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
     # We need to skip 'drug' elements in drug-interaction sub-elements. It's
     # unfortunate they re-used this tag name.
@@ -42,12 +44,15 @@ for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
     partner_ids = xpath(element, 'd:targets/d:target/@partner', single=False)
     if kegg_drug_id:
         drug_targets[kegg_drug_id] = partner_ids
-    drug_info.append(collections.OrderedDict((
-                ('name', name),
-                ('synonyms', ';'.join(synonyms)),
-                ('cid', pubchem_cid),
-                ('mf', molecular_formula),
-                )))
+    drug_info.append(rec(drugbank_id, name, ';'.join(synonyms), pubchem_cid,
+                         molecular_formula))
+    # drug_info.append(collections.OrderedDict((
+    #             ('id', drugbank_id),
+    #             ('name', name),
+    #             ('synonyms', ';'.join(synonyms)),
+    #             ('cid', pubchem_cid),
+    #             ('mf', molecular_formula),
+    #             )))
     element.clear()
 
 # Turns out it's much faster to do a second iterparse loop with a different
@@ -68,11 +73,11 @@ for drugbank_id, partner_ids in drug_targets.items():
     partner_ids[:] = [i for i in partner_ids if i is not None]
 
 # Targets -- kegg_drug_id: [uniprot_ids]
-print '\n'.join(map(str, sorted(drug_targets.items())))
+# print '\n'.join(map(str, sorted(drug_targets.items())))
 
 
 def to_utf8(v):
     return encodings.utf_8.encode(v)[0] if v else ''
-drug_info_good_mf = [x for x in drug_info if x['mf'] and ' ' not in x['mf']]
+drug_info_good_mf = [x for x in drug_info if x.mf and ' ' not in x.mf]
 # Drugs -- name, synonyms, cid, mf
 #print '\n'.join('\t'.join(map(to_utf8, x.values())) for x in drug_info_good_mf)
