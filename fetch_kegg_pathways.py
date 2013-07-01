@@ -4,6 +4,7 @@ import uniprot_utils as uu
 import json as js
 import fileinput as fi
 
+# {"JUNK": {"record": "HMSL10150\tD09950|D09951", "pathway": {"PRODUCT": "ICLUSIG (ARIAD Pharmaceuticals) 807f988e-117b-4497-934d-73aa78baac71"}, "kegg_id": "D09951"}}
 
 def uniq(seq):
     seen = set()
@@ -18,17 +19,19 @@ def uniq(seq):
 def JUNK(**kwargs):
     print >> sys.stderr, js.dumps({'JUNK': kwargs})
 
-colnames = ('drug_id drug_moniker pathway_id pathway_moniker '
+colnames = ('drug_id pathway_id pathway_moniker '
             'reference'.split())
 
 print '\t'.join(colnames)
 
 for line in fi.input():
     record = line.rstrip('\r\n')
-    id_, drug, kegg_ids = record.split('\t')[:3]
+    id_, kegg_ids = record.split('\t')[:3]
 
     pathways = []
     for ki in kegg_ids.split('|') if kegg_ids else []:
+        if not ki.startswith('D'):
+            continue
         for k, v in ku.fetch_raw_pathways('dr:' + ki).items():
             kv = ku.parse_raw_pathway(k, v)
             if not kv:
@@ -44,4 +47,4 @@ for line in fi.input():
 
 
     for k, v in uniq(pathways):
-        print '\t'.join([id_, drug, k, v, ref])
+        print '\t'.join([id_, k, v, ref])
