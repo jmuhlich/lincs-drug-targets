@@ -1,9 +1,9 @@
 import os
 import sys
-import collections
 import lxml.etree
 import csv
 import difflib
+import sqlalchemy as sa
 
 def xpath(obj, path, single=True):
     result = obj.xpath(path, namespaces={'d': ns})
@@ -16,11 +16,23 @@ def xpath(obj, path, single=True):
             raise ValueError("XPath expression matches more than one value")
     return result
 
+engine = sa.create_engine('sqlite:///:memory:')
+metadata = sa.MetaData(bind=engine)
+drugbank_drugs = sa.Table(
+    'drugbank_drugs', metadata,
+    sa.Column('drugbank_id', sa.String(), primary_key=True),
+    sa.Column('name', sa.String()),
+    sa.Column('synonyms', sa.String()),
+    sa.Column('kegg_id', sa.String()),
+    sa.Column('cid', sa.String()),
+    sa.Column('mf', sa.String()),
+    )
+metadata.create_all()
+
 datafile_name = 'drugbank.xml'
 datafile = open(datafile_name)
 
 drug_targets = {}
-drug_info = []
 pubchem_cids = []
 partner_to_uniprot = {}
 
@@ -28,8 +40,6 @@ ns = 'http://drugbank.ca'
 
 qnames = dict((tag, lxml.etree.QName(ns, tag).text)
               for tag in ('drug', 'drug-interaction', 'partner'))
-
-rec = collections.namedtuple('Record', 'id name synonyms kegg_id cid mf')
 
 for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
     # We need to skip 'drug' elements in drug-interaction sub-elements. It's
@@ -47,8 +57,9 @@ for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
                         '[d:resource="PubChem Compound"]/d:identifier/text()')
     partner_ids = xpath(element, 'd:targets/d:target/@partner', single=False)
     drug_targets[drugbank_id] = partner_ids
-    drug_info.append(rec(drugbank_id, name, ';'.join(synonyms), kegg_drug_id,
-                         pubchem_cid, molecular_formula))
+    engine.execute(drugbank_drugs.insert().values(
+            drugbank_id=drugbank_id, name=name, synonyms=';'.join(synonyms),
+            kegg_id=kegg_drug_id, cid=pubchem_cid, mf=molecular_formula))
     element.clear()
 
 # Turns out it's much faster to do a second iterparse loop with a different
@@ -87,11 +98,18 @@ sm_names_reader = csv.DictReader(sm_names_file, fieldnames=('hmsl_id', 'name'),
 all_names = []
 name_to_hmsl = {}
 cid_to_hmsl = {}
+found_conflicts = False
 for row in sm_names_reader:
     hmsl_id = row['hmsl_id']
+    hmsl_id = hmsl_id[:5]
     name = row['name']
     all_names.append(name)
+    if name in name_to_hmsl and name_to_hmsl[name] != hmsl_id:
+        print "CONFLICT: %s - %s / %s" % (name, name_to_hmsl[name], hmsl_id)
+        found_conflicts = True
     name_to_hmsl[name] = hmsl_id
+if found_conflicts:
+    exit()
 
 sm_filename = os.path.join(os.path.dirname(sys.argv[0]),
                            'small_molecule.130625T133836.tsv')
@@ -107,10 +125,10 @@ for row in sm_reader:
     mf_to_hmsl[row['Molecular Formula']] = hmsl_id
 
 drugbank_to_hmsl = {}
-for di in drug_info:
+for di in engine.execute(drugbank_drugs.select()):
     cid_match_id = cid_to_hmsl.get(di.cid)
     if cid_match_id:
-        drugbank_to_hmsl[di.id] = \
+        drugbank_to_hmsl[di.drugbank_id] = \
             [(cid_match_id, 'CID match: %s (%s)' %
               (di.cid, di.name))]
     else:
@@ -118,9 +136,9 @@ for di in drug_info:
                                                  cutoff=0.8)
 
         if name_matches:
-            for name in name_matches:
-                hmsl_record = sm_data[name_to_hmsl[n]]
-            drugbank_to_hmsl[di.id] = \
+#            for name in name_matches:
+#                hmsl_record = sm_data[name_to_hmsl[n]]
+            drugbank_to_hmsl[di.drugbank_id] = \
                 [(name_to_hmsl[n], 'Name match: %s -> %s' % (di.name, n))
                  for n in name_matches]
 
