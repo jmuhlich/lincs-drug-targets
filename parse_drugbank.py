@@ -1,5 +1,9 @@
+import os
+import sys
 import collections
 import lxml.etree
+import csv
+import difflib
 
 def xpath(obj, path, single=True):
     result = obj.xpath(path, namespaces={'d': ns})
@@ -25,7 +29,7 @@ ns = 'http://drugbank.ca'
 qnames = dict((tag, lxml.etree.QName(ns, tag).text)
               for tag in ('drug', 'drug-interaction', 'partner'))
 
-rec = collections.namedtuple('Record', 'id name synonyms cid mf')
+rec = collections.namedtuple('Record', 'id name synonyms kegg_id cid mf')
 
 for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
     # We need to skip 'drug' elements in drug-interaction sub-elements. It's
@@ -42,17 +46,9 @@ for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
     pubchem_cid = xpath(element, './/d:external-identifier'
                         '[d:resource="PubChem Compound"]/d:identifier/text()')
     partner_ids = xpath(element, 'd:targets/d:target/@partner', single=False)
-    if kegg_drug_id:
-        drug_targets[kegg_drug_id] = partner_ids
-    drug_info.append(rec(drugbank_id, name, ';'.join(synonyms), pubchem_cid,
-                         molecular_formula))
-    # drug_info.append(collections.OrderedDict((
-    #             ('id', drugbank_id),
-    #             ('name', name),
-    #             ('synonyms', ';'.join(synonyms)),
-    #             ('cid', pubchem_cid),
-    #             ('mf', molecular_formula),
-    #             )))
+    drug_targets[drugbank_id] = partner_ids
+    drug_info.append(rec(drugbank_id, name, ';'.join(synonyms), kegg_drug_id,
+                         pubchem_cid, molecular_formula))
     element.clear()
 
 # Turns out it's much faster to do a second iterparse loop with a different
@@ -73,11 +69,59 @@ for drugbank_id, partner_ids in drug_targets.items():
     partner_ids[:] = [i for i in partner_ids if i is not None]
 
 # Targets -- kegg_drug_id: [uniprot_ids]
-# print '\n'.join(map(str, sorted(drug_targets.items())))
+#print '\n'.join(map(str, sorted(drug_targets.items())))
 
 
 def to_utf8(v):
     return encodings.utf_8.encode(v)[0] if v else ''
-drug_info_good_mf = [x for x in drug_info if x.mf and ' ' not in x.mf]
+#drug_info_good_mf = [x for x in drug_info if x.mf and ' ' not in x.mf]
 # Drugs -- name, synonyms, cid, mf
 #print '\n'.join('\t'.join(map(to_utf8, x.values())) for x in drug_info_good_mf)
+
+
+sm_names_filename = os.path.join(os.path.dirname(sys.argv[0]),
+                                 'small_molecule_all_names.130625T133836.tsv')
+sm_names_file = open(sm_names_filename, 'rb')
+sm_names_reader = csv.DictReader(sm_names_file, fieldnames=('hmsl_id', 'name'),
+                                 dialect='excel-tab')
+all_names = []
+name_to_hmsl = {}
+cid_to_hmsl = {}
+for row in sm_names_reader:
+    hmsl_id = row['hmsl_id']
+    name = row['name']
+    all_names.append(name)
+    name_to_hmsl[name] = hmsl_id
+
+sm_filename = os.path.join(os.path.dirname(sys.argv[0]),
+                           'small_molecule.130625T133836.tsv')
+sm_file = open(sm_filename, 'rb')
+sm_reader = csv.DictReader(sm_file, dialect='excel-tab')
+cid_to_hmsl = {}
+mf_to_hmsl = {}
+sm_data = {}
+for row in sm_reader:
+    hmsl_id = row['Small Mol HMS LINCS ID']
+    sm_data[hmsl_id] = row
+    cid_to_hmsl[row['PubChem CID']] = hmsl_id
+    mf_to_hmsl[row['Molecular Formula']] = hmsl_id
+
+drugbank_to_hmsl = {}
+for di in drug_info:
+    cid_match_id = cid_to_hmsl.get(di.cid)
+    if cid_match_id:
+        drugbank_to_hmsl[di.id] = \
+            [(cid_match_id, 'CID match: %s (%s)' %
+              (di.cid, di.name))]
+    else:
+        name_matches = difflib.get_close_matches(di.name, all_names,
+                                                 cutoff=0.8)
+
+        if name_matches:
+            for name in name_matches:
+                hmsl_record = sm_data[name_to_hmsl[n]]
+            drugbank_to_hmsl[di.id] = \
+                [(name_to_hmsl[n], 'Name match: %s -> %s' % (di.name, n))
+                 for n in name_matches]
+
+print  '\n'.join(sorted(map(str, drugbank_to_hmsl.items())))
