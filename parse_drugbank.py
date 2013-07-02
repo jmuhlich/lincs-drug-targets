@@ -102,7 +102,7 @@ def to_utf8(v):
 
 
 sm_names_filename = os.path.join(os.path.dirname(sys.argv[0]),
-                                 'small_molecule_all_names.130625T133836.tsv')
+                                 'all_sm.130625T133836.tsv')
 sm_names_file = open(sm_names_filename, 'rb')
 sm_names_reader = csv.DictReader(sm_names_file, fieldnames=('hmsl_id', 'name'),
                                  dialect='excel-tab')
@@ -125,7 +125,7 @@ if found_conflicts:
     sys.exit()
 
 sm_filename = os.path.join(os.path.dirname(sys.argv[0]),
-                           'small_molecule.130625T133836.tsv')
+                           'small_molecule.130624M134120.tsv')
 sm_file = open(sm_filename, 'rb')
 sm_reader = csv.DictReader(sm_file, dialect='excel-tab')
 cid_to_hmsl = {}
