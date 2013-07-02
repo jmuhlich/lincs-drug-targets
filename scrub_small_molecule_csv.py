@@ -110,7 +110,7 @@ def cleanup_record(r):
     r = rec(*(cleanup(s) for s in r))
     r = cleanup_names(r)
     r = cleanup_alts(r)
-    return r
+    return rec('HMSL%s' % r[0], *r[1:])
 
 csv.writer(sys.stdout,
            delimiter='\t',
