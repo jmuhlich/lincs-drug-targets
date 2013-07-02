@@ -28,10 +28,10 @@ drugbank_drug = sa.Table(
     sa.Column('molecular_formula', sa.String()),
     sa.Column('partners', sa.PickleType()),  # list of strings
     )
-hmsl_name = sa.Table(
-    'hmsl_name', metadata,
-    sa.Column('name', sa.String(), primary_key=True),
-    sa.Column('hmsl_id', sa.String()),
+drugbank_name = sa.Table(
+    'drugbank_name', metadata,
+    sa.Column('drug_id', sa.String()),
+    sa.Column('name', sa.String(), index=True),
     )
 metadata.create_all()
 
@@ -63,6 +63,11 @@ for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
                           kegg_id=kegg_id, pubchem_cid=pubchem_cid,
                           molecular_formula=molecular_formula,
                           partners=partner_ids))
+    engine.execute(drugbank_name.insert().
+                   values(drug_id=drug_id, name=name.lower()))
+    for s in synonyms:
+        engine.execute(drugbank_name.insert().
+                       values(drug_id=drug_id, name=s.lower()))
     element.clear()
 
 # Turns out it's much faster to do a second iterparse loop with a different
@@ -100,59 +105,62 @@ def to_utf8(v):
 # Drugs -- name, synonyms, cid, mf
 #print '\n'.join('\t'.join(map(to_utf8, x.values())) for x in drug_info_good_mf)
 
-
-sm_names_filename = os.path.join(os.path.dirname(sys.argv[0]),
-                                 'all_sm.130625T133836.tsv')
-sm_names_file = open(sm_names_filename, 'rb')
-sm_names_reader = csv.DictReader(sm_names_file, fieldnames=('hmsl_id', 'name'),
-                                 dialect='excel-tab')
-all_names = []
-found_conflicts = False
-for row in sm_names_reader:
-    row['hmsl_id'] = row['hmsl_id'][:5]
-    all_names.append(row['name'])
-    try:
-        engine.execute(hmsl_name.insert().values(**row))
-    except sa.exc.IntegrityError as e:
-        r = engine.execute(hmsl_name.select().
-                           where(hmsl_name.c.name == row['name']))
-        rec = r.first()
-        if rec and rec.hmsl_id != row['hmsl_id']:
-            print "CONFLICT: %s - %s / %s" % (row['name'],
-                                              rec.hmsl_id, row['hmsl_id'])
-            found_conflicts = True
-if found_conflicts:
-    sys.exit()
+drugbank_names = [
+    rec[0] for rec in engine.execute(sa.select([drugbank_name.c.name]))]
 
 sm_filename = os.path.join(os.path.dirname(sys.argv[0]),
                            'small_molecule.130624M134120.tsv')
 sm_file = open(sm_filename, 'rb')
-sm_reader = csv.DictReader(sm_file, dialect='excel-tab')
-cid_to_hmsl = {}
-mf_to_hmsl = {}
-sm_data = {}
+sm_reader = csv.reader(sm_file, dialect='excel-tab')
+sm_fields = [f.lower().replace(' ', '_') for f in sm_reader.next()]
+hmsl_sm = sa.Table(
+    'hmsl_sm', metadata,
+    *[sa.Column(f, sa.String()) for f in sm_fields]
+)
+hmsl_sm.c.small_mol_hms_lincs_id.primary_key = True
+hmsl_sm.c.alternative_names.type = sa.PickleType()
+metadata.create_all(tables=[hmsl_sm])
 for row in sm_reader:
-    hmsl_id = row['Small Mol HMS LINCS ID']
-    sm_data[hmsl_id] = row
-    cid_to_hmsl[row['PubChem CID']] = hmsl_id
-    mf_to_hmsl[row['Molecular Formula']] = hmsl_id
+    row[0] = row[0][:-4]
+    row[2] = row[2].split(';')
+    engine.execute(hmsl_sm.insert().values(row))
 
-drugbank_to_hmsl = {}
-for di in engine.execute(drugbank_drug.select()):
-    cid_match_id = cid_to_hmsl.get(di.pubchem_cid)
-    if cid_match_id:
-        drugbank_to_hmsl[di.drug_id] = \
-            [(cid_match_id, 'CID match: %s (%s)' %
-              (di.pubchem_cid, di.name))]
-    else:
-        name_matches = difflib.get_close_matches(di.name, all_names,
-                                                 cutoff=0.8)
+hmsl_to_drugbank = {}
 
-        if name_matches:
-#            for name in name_matches:
-#                hmsl_record = sm_data[name_to_hmsl[n]]
-            drugbank_to_hmsl[di.drug_id] = \
-                [(name_to_hmsl[n], 'Name match: %s -> %s' % (di.name, n))
-                 for n in name_matches]
+for sm in engine.execute(hmsl_sm.select()):
+
+    hmsl_names = [s.lower() for s in [sm.sm_name] + sm.alternative_names]
+    for name in hmsl_names:
+        match = engine.execute(sa.select([drugbank_name.c.drug_id]).
+                               where(drugbank_name.c.name == name)
+                               ).scalar()
+        if match:
+            break
+    if match:
+        print "%s\t%s\tName: %s" % \
+            (sm.small_mol_hms_lincs_id, match, sm.sm_name)
+        continue
+
+    match = engine.execute(sa.select([drugbank_drug.c.drug_id]).
+                           where(drugbank_drug.c.pubchem_cid == 
+                                 sm.pubchem_cid)
+                           ).scalar()
+    if match:
+        print "%s\t%s\tPubChem CID: %s" % \
+            (sm.small_mol_hms_lincs_id, match, sm.pubchem_cid)
+        continue
+
+    print "%s\t\tNO MATCH" % sm.small_mol_hms_lincs_id
+
+#     else:
+#         name_matches = difflib.get_close_matches(di.name, all_names,
+#                                                  cutoff=0.8)
+
+#         if name_matches:
+# #            for name in name_matches:
+# #                hmsl_record = sm_data[name_to_hmsl[n]]
+#             drugbank_to_hmsl[di.drug_id] = \
+#                 [(name_to_hmsl[n], 'Name match: %s -> %s' % (di.name, n))
+#                  for n in name_matches]
 
 print  '\n'.join(sorted(map(str, drugbank_to_hmsl.items())))
