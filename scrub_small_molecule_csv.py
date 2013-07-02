@@ -5,7 +5,7 @@ import fileinput as fi
 import re
 import collections as co
 
-def cleanup(s, _nl=re.compile(ur'\n+')):
+def cleanup(s, _nl=re.compile(ur'\n+|^\s*None\s*$')):
     return _nl.sub('', s)
 
 colnames = tuple('small_mol_hms_lincs_id sm_name alternative_names '
