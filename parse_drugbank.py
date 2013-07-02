@@ -2,7 +2,6 @@ import os
 import sys
 import lxml.etree
 import csv
-import difflib
 import sqlalchemy as sa
 
 def xpath(obj, path, single=True):
@@ -51,6 +50,7 @@ for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
     drug_id = xpath(element, 'd:drugbank-id/text()')
     name = xpath(element, 'd:name/text()')
     synonyms = xpath(element, 'd:synonyms/d:synonym/text()', single=False)
+    synonyms += xpath(element, 'd:brands/d:brand/text()', single=False)
     molecular_formula = xpath(element, './/d:property'
                               '[d:kind="Molecular Formula"]/d:value/text()')
     kegg_id = xpath(element, './/d:external-identifier'
@@ -113,17 +113,33 @@ sm_filename = os.path.join(os.path.dirname(sys.argv[0]),
 sm_file = open(sm_filename, 'rb')
 sm_reader = csv.reader(sm_file, dialect='excel-tab')
 sm_fields = [f.lower().replace(' ', '_') for f in sm_reader.next()]
+sm_fields[0] = 'sm_id'
 hmsl_sm = sa.Table(
     'hmsl_sm', metadata,
     *[sa.Column(f, sa.String()) for f in sm_fields]
 )
-hmsl_sm.c.small_mol_hms_lincs_id.primary_key = True
+hmsl_sm.append_constraint(sa.PrimaryKeyConstraint(hmsl_sm.c.sm_id))
 hmsl_sm.c.alternative_names.type = sa.PickleType()
 metadata.create_all(tables=[hmsl_sm])
 for row in sm_reader:
     row[0] = row[0][:-4]
     row[2] = row[2].split(';')
-    engine.execute(hmsl_sm.insert().values(row))
+    try:
+        engine.execute(hmsl_sm.insert().values(row))
+    except sa.exc.IntegrityError as e:
+        rec = engine.execute(hmsl_sm.select().
+                             where(hmsl_sm.c.sm_id == row[0])).first()
+        if rec:
+            new_rec = dict(rec)
+            new_rec['alternative_names'] = list(set(
+                    rec.alternative_names +
+                    [row[sm_fields.index('sm_name')]] +
+                    row[sm_fields.index('alternative_names')]))
+            if not rec.pubchem_cid:
+                new_rec['pubchem_cid'] = row[sm_fields.index('pubchem_cid')]
+            engine.execute(hmsl_sm.update().
+                           where(hmsl_sm.c.sm_id == new_rec['sm_id']).
+                           values(new_rec))
 
 hmsl_to_drugbank = {}
 
@@ -137,8 +153,7 @@ for sm in engine.execute(hmsl_sm.select()):
         if match:
             break
     if match:
-        print "%s\t%s\tName: %s" % \
-            (sm.small_mol_hms_lincs_id, match, sm.sm_name)
+        print "%s\t%s\tName: %s" % (sm.sm_id, match, name)
         continue
 
     match = engine.execute(sa.select([drugbank_drug.c.drug_id]).
@@ -146,21 +161,7 @@ for sm in engine.execute(hmsl_sm.select()):
                                  sm.pubchem_cid)
                            ).scalar()
     if match:
-        print "%s\t%s\tPubChem CID: %s" % \
-            (sm.small_mol_hms_lincs_id, match, sm.pubchem_cid)
+        print "%s\t%s\tPubChem CID: %s" % (sm.sm_id, match, sm.pubchem_cid)
         continue
 
-    print "%s\t\tNO MATCH" % sm.small_mol_hms_lincs_id
-
-#     else:
-#         name_matches = difflib.get_close_matches(di.name, all_names,
-#                                                  cutoff=0.8)
-
-#         if name_matches:
-# #            for name in name_matches:
-# #                hmsl_record = sm_data[name_to_hmsl[n]]
-#             drugbank_to_hmsl[di.drug_id] = \
-#                 [(name_to_hmsl[n], 'Name match: %s -> %s' % (di.name, n))
-#                  for n in name_matches]
-
-print  '\n'.join(sorted(map(str, drugbank_to_hmsl.items())))
+    print "%s\t\tNO MATCH" % sm.sm_id
