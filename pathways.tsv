@@ -1,334 +1,496 @@
-drug_id	drug_moniker	pathway_id	pathway_moniker	reference
-HMSL10001	SELICICLIB			
-HMSL10002	ALWII383			
-HMSL10003	ALWII497			
-HMSL10004	AT7519			
-HMSL10005	TIVOZANIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10005	TIVOZANIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10005	TIVOZANIB	hsa04510	Focal adhesion	kegg
-HMSL10006	AZD7762			
-HMSL10007	AZD8055			
-HMSL10008	SORAFENIB	hsa05200	Pathways in cancer	kegg
-HMSL10008	SORAFENIB	hsa05211	Renal cell carcinoma	kegg
-HMSL10008	SORAFENIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10008	SORAFENIB	hsa04650	Natural killer cell mediated cytotoxicity	kegg
-HMSL10008	SORAFENIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10008	SORAFENIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10008	SORAFENIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10008	SORAFENIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10008	SORAFENIB	hsa04150	mTOR signaling pathway	kegg
-HMSL10008	SORAFENIB	hsa04062	Chemokine signaling pathway	kegg
-HMSL10009	CP466722			
-HMSL10010	CP724714			
-HMSL10011	FLAVOPIRIDOL			
-HMSL10012	GSK429286A			
-HMSL10013	GSK461364			
-HMSL10014	GW843682			
-HMSL10015	HG511301			
-HMSL10016	HG58801			
-HMSL10017	KIN001206			
-HMSL10018	NERATINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10018	NERATINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10018	NERATINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10018	NERATINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10018	NERATINIB	hsa05200	Pathways in cancer	kegg
-HMSL10019	JW7241			
-HMSL10020	DASATINIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10020	DASATINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10020	DASATINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10020	DASATINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10020	DASATINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10020	DASATINIB	hsa05220	Chronic myeloid leukemia	kegg
-HMSL10020	DASATINIB	hsa05200	Pathways in cancer	kegg
-HMSL10021	TOZASERTIB	hsa04630	Jak-STAT signaling pathway	kegg
-HMSL10021	TOZASERTIB	hsa05200	Pathways in cancer	kegg
-HMSL10022	GNF2			
-HMSL10023	IMATINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10023	IMATINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10023	IMATINIB	hsa05200	Pathways in cancer	kegg
-HMSL10023	IMATINIB	hsa05220	Chronic myeloid leukemia	kegg
-HMSL10023	IMATINIB	hsa04640	Hematopoietic cell lineage	kegg
-HMSL10023	IMATINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10023	IMATINIB	ko04976	Bile secretion	kegg
-HMSL10024	NVPTAE684			
-HMSL10025	MLS000911536			
-HMSL10026	PD173074			
-HMSL10027	CRIZOTINIB			
-HMSL10028	BMS345541			
-HMSL10029	GW5074			
-HMSL10030	KIN001042			
-HMSL10031	KIN001043			
-HMSL10032	SARACATINIB	hsa04062	Chemokine signaling pathway	kegg
-HMSL10032	SARACATINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10032	SARACATINIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10033	KIN001055			
-HMSL10034	AS601245			
-HMSL10035	AKT12INHIBITOR			
-HMSL10036	SB239063			
-HMSL10037	AC220			
-HMSL10038	WH4023			
-HMSL10039	WH4025			
-HMSL10040	R406			
-HMSL10041	BI2536			
-HMSL10042	MOTESANIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10042	MOTESANIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10042	MOTESANIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10042	MOTESANIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10043	KIN001127			
-HMSL10044	FMK			
-HMSL10045	A443654			
-HMSL10046	SB590885			
-HMSL10047	GDC0941			
-HMSL10048	CI1040			
-HMSL10049	PLX4720			
-HMSL10050	AZ628			
-HMSL10051	LAPATINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10051	LAPATINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10051	LAPATINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10051	LAPATINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10051	LAPATINIB	hsa05200	Pathways in cancer	kegg
-HMSL10051	LAPATINIB	ko04976	Bile secretion	kegg
-HMSL10052	SIROLIMUS	ko04150	mTOR signaling pathway	kegg
-HMSL10052	SIROLIMUS	hsa05200	Pathways in cancer	kegg
-HMSL10052	SIROLIMUS	hsa04012	ErbB signaling pathway	kegg
-HMSL10052	SIROLIMUS	hsa04150	mTOR signaling pathway	kegg
-HMSL10053	ZSTK474			
-HMSL10054	AS605240			
-HMSL10055	BX912			
-HMSL10056	SELUMETINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10056	SELUMETINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10057	MK2206			
-HMSL10058	CG930			
-HMSL10059	AZD6482			
-HMSL10060	TAK715			
-HMSL10061	NU7441			
-HMSL10062	GSK1070916			
-HMSL10063	OSI027			
-HMSL10064	WYE125132			
-HMSL10065	KIN001220			
-HMSL10066	MLN8054			
-HMSL10067	BARASERTIB			
-HMSL10068	R7204			
-HMSL10069	ENZASTAURIN	hsa05200	Pathways in cancer	kegg
-HMSL10070	NPK76II721			
-HMSL10071	PD0332991			
-HMSL10072	PF562271			
-HMSL10073	PHA793887			
-HMSL10074	KU55933			
-HMSL10075	QLX138			
-HMSL10076	QLXI92			
-HMSL10077	QLXII47			
-HMSL10078	THZ29801			
-HMSL10079	TORIN1			
-HMSL10080	TORIN2			
-HMSL10081	KIN001244			
-HMSL10082	WZ4145			
-HMSL10083	WZ7043			
-HMSL10084	WZ3105			
-HMSL10085	WZ4002			
-HMSL10086	LRRK2IN1			
-HMSL10087	XMD1185H			
-HMSL10088	XMD132			
-HMSL10089	XMD1499			
-HMSL10090	XMD1527			
-HMSL10091	XMD16144			
-HMSL10092	JWE035			
-HMSL10093	XMD885			
-HMSL10094	XMD892			
-HMSL10095	ZG10			
-HMSL10096	ZM447439			
-HMSL10097	ERLOTINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10097	ERLOTINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10097	ERLOTINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10097	ERLOTINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10097	ERLOTINIB	hsa05223	Non-small cell lung cancer	kegg
-HMSL10097	ERLOTINIB	hsa05200	Pathways in cancer	kegg
-HMSL10097	ERLOTINIB	ko04976	Bile secretion	kegg
-HMSL10098	GEFITINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10098	GEFITINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10098	GEFITINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10098	GEFITINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10098	GEFITINIB	hsa05223	Non-small cell lung cancer	kegg
-HMSL10098	GEFITINIB	hsa05200	Pathways in cancer	kegg
-HMSL10099	NILOTINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10099	NILOTINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10099	NILOTINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10099	NILOTINIB	hsa04110	Cell cycle	kegg
-HMSL10099	NILOTINIB	hsa05200	Pathways in cancer	kegg
-HMSL10099	NILOTINIB	hsa05220	Chronic myeloid leukemia	kegg
-HMSL10099	NILOTINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10100	JNK9L			
-HMSL10101	PD325901			
-HMSL10102	PACLITAXEL	ko04976	Bile secretion	kegg
-HMSL10102	PACLITAXEL	hsa04540	Gap junction	kegg
-HMSL10108	GELDANAMYCIN			
-HMSL10109	YM201636			
-HMSL10110	FR180204			
-HMSL10111	TWS119			
-HMSL10112	PF477736			
-HMSL10113	CMETRON DUAL KINASE INHIBITOR			
-HMSL10114	PAZOPANIB	hsa05200	Pathways in cancer	kegg
-HMSL10114	PAZOPANIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10114	PAZOPANIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10114	PAZOPANIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10115	LDN193189			
-HMSL10116	PF431396			
-HMSL10118	AMUVATINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10118	AMUVATINIB	hsa05200	Pathways in cancer	kegg
-HMSL10119	PKISU11274			
-HMSL10120	CANERTINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10120	CANERTINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10120	CANERTINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10120	CANERTINIB	hsa05212	Pancreatic cancer	kegg
-HMSL10120	CANERTINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10121	SB525334			
-HMSL10122	AEW541			
-HMSL10123	SGX523			
-HMSL10124	MGCD265			
-HMSL10125	PHA665752			
-HMSL10126	PI103			
-HMSL10127	DOVITINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10127	DOVITINIB	hsa04510	Focal adhesion	kegg
-HMSL10127	DOVITINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10128	GSK690693			
-HMSL10129	PCI32765			
-HMSL10130	MASITINIB	hsa04151	PI3K-Akt signaling pathway	kegg
-HMSL10130	MASITINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10132	BMS387032			
-HMSL10133	AFATINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10133	AFATINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10133	AFATINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10133	AFATINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10133	AFATINIB	hsa05200	Pathways in cancer	kegg
-HMSL10134	GSK1904529A			
-HMSL10135	OSI906			
-HMSL10136	TPCA1			
-HMSL10137	BMS509744			
-HMSL10138	RUXOLITINIB	hsa04062	Chemokine signaling pathway	kegg
-HMSL10138	RUXOLITINIB	hsa04630	Jak-STAT signaling pathway	kegg
-HMSL10139	AZD1480			
-HMSL10140	CYT387			
-HMSL10141	TG101348			
-HMSL10142	GSK1120212			
-HMSL10143	BMS777607			
-HMSL10144	OLAPARIB	hsa03410	Base excision repair	kegg
-HMSL10144	OLAPARIB	hsa04064	NF-kappa B signaling pathway	kegg
-HMSL10145	VELIPARIB	hsa04064	NF-kappa B signaling pathway	kegg
-HMSL10145	VELIPARIB	hsa03410	Base excision repair	kegg
-HMSL10146	GSK2126458			
-HMSL10147	NVPBKM120			
-HMSL10148	SAR245408			
-HMSL10149	Y39983			
-HMSL10150	PONATINIB	hsa05200	Pathways in cancer	kegg
-HMSL10151	VARGATEF			
-HMSL10152	MK1775			
-HMSL10153	KIN001266			
-HMSL10154	AT7867			
-HMSL10155	KU60019			
-HMSL10156	JNJ38877605			
-HMSL10157	FORETINIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10157	FORETINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10157	FORETINIB	hsa04510	Focal adhesion	kegg
-HMSL10158	AZD5438			
-HMSL10159	PELITINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10159	PELITINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10159	PELITINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10159	PELITINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10160	SB216763			
-HMSL10161	NVPAUY922			
-HMSL10162	SP600125			
-HMSL10163	BIX02189			
-HMSL10164	ARRY424704			
-HMSL10165	PF04217903			
-HMSL10166	BAY613606			
-HMSL10167	PB203580			
-HMSL10168	VX745			
-HMSL10169	DORAMAPIMOD	hsa04380	Osteoclast differentiation	kegg
-HMSL10169	DORAMAPIMOD	hsa04010	MAPK signaling pathway	kegg
-HMSL10169	DORAMAPIMOD	hsa04370	VEGF signaling pathway	kegg
-HMSL10170	JNJ26854165			
-HMSL10171	TGX221			
-HMSL10172	GSK1059615			
-HMSL10173	SAR245409			
-HMSL10174	A769662			
-HMSL10175	SUNITINIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10175	SUNITINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10175	SUNITINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10175	SUNITINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10175	SUNITINIB	hsa05200	Pathways in cancer	kegg
-HMSL10177	BRIVANIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10177	BRIVANIB	hsa04810	Regulation of actin cytoskeleton	kegg
-HMSL10177	BRIVANIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10177	BRIVANIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10178	OSI930			
-HMSL10179	ABT737			
-HMSL10180	KIN001157			
-HMSL10181	GDC0879			
-HMSL10182	LINIFANIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10182	LINIFANIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10182	LINIFANIB	hsa04540	Gap junction	kegg
-HMSL10182	LINIFANIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10182	LINIFANIB	hsa04510	Focal adhesion	kegg
-HMSL10183	KIN001271			
-HMSL10184	ON01910			
-HMSL10185	CC401			
-HMSL10186	CHELERYTHRINE			
-HMSL10187	KI20227			
-HMSL10188	BX795			
-HMSL10189	BOSUTINIB	hsa04062	Chemokine signaling pathway	kegg
-HMSL10189	BOSUTINIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10189	BOSUTINIB	hsa05200	Pathways in cancer	kegg
-HMSL10189	BOSUTINIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10191	HMN214			
-HMSL10192	KW2449			
-HMSL10193	TIE2 KINASE INHIBITOR			
-HMSL10194	CABOZANTINIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10194	CABOZANTINIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10194	CABOZANTINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10194	CABOZANTINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10194	CABOZANTINIB	hsa05200	Pathways in cancer	kegg
-HMSL10195	KIN001269			
-HMSL10196	KIN001270			
-HMSL10198	VANDETANIB	hsa04370	VEGF signaling pathway	kegg
-HMSL10198	VANDETANIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10198	VANDETANIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10198	VANDETANIB	hsa04020	Calcium signaling pathway	kegg
-HMSL10198	VANDETANIB	hsa04012	ErbB signaling pathway	kegg
-HMSL10198	VANDETANIB	hsa05200	Pathways in cancer	kegg
-HMSL10199	PF573228			
-HMSL10200	NVPBHG712			
-HMSL10201	CH5424802			
-HMSL10202	D4476			
-HMSL10203	A66			
-HMSL10204	CAL101			
-HMSL10206	RAF265			
-HMSL10208	TCSJNK5A			
-HMSL10223	TYRPHOSTIN			
-HMSL10230	LESTAURTINIB	hsa04060	Cytokine-cytokine receptor interaction	kegg
-HMSL10230	LESTAURTINIB	hsa05202	Transcriptional misregulation in cancer	kegg
-HMSL10230	LESTAURTINIB	hsa04630	Jak-STAT signaling pathway	kegg
-HMSL10230	LESTAURTINIB	hsa04062	Chemokine signaling pathway	kegg
-HMSL10230	LESTAURTINIB	hsa04010	MAPK signaling pathway	kegg
-HMSL10230	LESTAURTINIB	hsa05200	Pathways in cancer	kegg
-HMSL10232	BEZ235			
-HMSL10233	BYL719			
-HMSL10234	GDC-0980			
-HMSL10235	EVEROLIMUS	ko04150	mTOR signaling pathway	kegg
-HMSL10236	17AAG			
-HMSL10239	AG1024			
-HMSL10240	AS252424			
-HMSL10247	DOCETAXEL	hsa04540	Gap junction	kegg
-HMSL10247	DOCETAXEL	ko04976	Bile secretion	kegg
-HMSL10251	FASCAPLYSIN			
-HMSL10255	GSK1838705			
-HMSL10262	RAFIIV			
-HMSL10267	NU6102			
-HMSL10268	NUTLIN3A			
-HMSL10271	PD98059			
-HMSL10273	PURVALANOLA			
-HMSL10276	TCS2312			
-HMSL10277	TEMSIROLIMUS	hsa05200	Pathways in cancer	kegg
-HMSL10277	TEMSIROLIMUS	hsa04012	ErbB signaling pathway	kegg
-HMSL10277	TEMSIROLIMUS	hsa04150	mTOR signaling pathway	kegg
-HMSL10280	TRICIRIBINE			
-HMSL10281	VINORELBINE	hsa04540	Gap junction	kegg
+drug_id	pathway_id	pathway_moniker	reference
+HMSL10001			
+HMSL10002			
+HMSL10003			
+HMSL10004			
+HMSL10005	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10005	hsa04370	VEGF signaling pathway	kegg
+HMSL10005	hsa04510	Focal adhesion	kegg
+HMSL10006			
+HMSL10007			
+HMSL10008	hsa05200	Pathways in cancer	kegg
+HMSL10008	hsa05211	Renal cell carcinoma	kegg
+HMSL10008	hsa04010	MAPK signaling pathway	kegg
+HMSL10008	hsa04650	Natural killer cell mediated cytotoxicity	kegg
+HMSL10008	hsa04370	VEGF signaling pathway	kegg
+HMSL10008	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10008	hsa04012	ErbB signaling pathway	kegg
+HMSL10008	hsa04020	Calcium signaling pathway	kegg
+HMSL10008	hsa04150	mTOR signaling pathway	kegg
+HMSL10008	hsa04062	Chemokine signaling pathway	kegg
+HMSL10009			
+HMSL10010			
+HMSL10011			
+HMSL10012			
+HMSL10013			
+HMSL10014			
+HMSL10015			
+HMSL10016			
+HMSL10017			
+HMSL10018	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10018	hsa04010	MAPK signaling pathway	kegg
+HMSL10018	hsa04020	Calcium signaling pathway	kegg
+HMSL10018	hsa04012	ErbB signaling pathway	kegg
+HMSL10018	hsa05200	Pathways in cancer	kegg
+HMSL10019			
+HMSL10020	hsa04370	VEGF signaling pathway	kegg
+HMSL10020	hsa04012	ErbB signaling pathway	kegg
+HMSL10020	hsa04010	MAPK signaling pathway	kegg
+HMSL10020	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10020	hsa04020	Calcium signaling pathway	kegg
+HMSL10020	hsa05220	Chronic myeloid leukemia	kegg
+HMSL10020	hsa05200	Pathways in cancer	kegg
+HMSL10021	hsa04630	Jak-STAT signaling pathway	kegg
+HMSL10021	hsa05200	Pathways in cancer	kegg
+HMSL10022			
+HMSL10023	hsa04020	Calcium signaling pathway	kegg
+HMSL10023	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10023	hsa05200	Pathways in cancer	kegg
+HMSL10023	hsa05220	Chronic myeloid leukemia	kegg
+HMSL10023	hsa04640	Hematopoietic cell lineage	kegg
+HMSL10023	hsa04010	MAPK signaling pathway	kegg
+HMSL10023	ko04976	Bile secretion	kegg
+HMSL10024			
+HMSL10025			
+HMSL10026			
+HMSL10027			
+HMSL10028			
+HMSL10029			
+HMSL10030			
+HMSL10031			
+HMSL10032	hsa04062	Chemokine signaling pathway	kegg
+HMSL10032	hsa04012	ErbB signaling pathway	kegg
+HMSL10032	hsa04370	VEGF signaling pathway	kegg
+HMSL10033			
+HMSL10034			
+HMSL10035			
+HMSL10036			
+HMSL10037			
+HMSL10038			
+HMSL10039			
+HMSL10040			
+HMSL10041			
+HMSL10042	hsa04370	VEGF signaling pathway	kegg
+HMSL10042	hsa04020	Calcium signaling pathway	kegg
+HMSL10042	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10042	hsa04010	MAPK signaling pathway	kegg
+HMSL10043			
+HMSL10044			
+HMSL10045			
+HMSL10046			
+HMSL10047			
+HMSL10048			
+HMSL10049			
+HMSL10050			
+HMSL10051	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10051	hsa04010	MAPK signaling pathway	kegg
+HMSL10051	hsa04020	Calcium signaling pathway	kegg
+HMSL10051	hsa04012	ErbB signaling pathway	kegg
+HMSL10051	hsa05200	Pathways in cancer	kegg
+HMSL10051	ko04976	Bile secretion	kegg
+HMSL10052	ko04150	mTOR signaling pathway	kegg
+HMSL10053			
+HMSL10054			
+HMSL10055			
+HMSL10056	hsa04010	MAPK signaling pathway	kegg
+HMSL10056	hsa04012	ErbB signaling pathway	kegg
+HMSL10057			
+HMSL10058			
+HMSL10059			
+HMSL10060			
+HMSL10061			
+HMSL10062			
+HMSL10063			
+HMSL10064			
+HMSL10065			
+HMSL10066			
+HMSL10067			
+HMSL10068			
+HMSL10069	hsa05200	Pathways in cancer	kegg
+HMSL10070			
+HMSL10071			
+HMSL10072			
+HMSL10073			
+HMSL10074			
+HMSL10075			
+HMSL10076			
+HMSL10077			
+HMSL10078			
+HMSL10079			
+HMSL10080			
+HMSL10081			
+HMSL10082			
+HMSL10083			
+HMSL10084			
+HMSL10085			
+HMSL10086			
+HMSL10087			
+HMSL10088			
+HMSL10089			
+HMSL10090			
+HMSL10091			
+HMSL10092			
+HMSL10093			
+HMSL10094			
+HMSL10095			
+HMSL10096			
+HMSL10097	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10097	hsa04010	MAPK signaling pathway	kegg
+HMSL10097	hsa04020	Calcium signaling pathway	kegg
+HMSL10097	hsa04012	ErbB signaling pathway	kegg
+HMSL10097	hsa05223	Non-small cell lung cancer	kegg
+HMSL10097	hsa05200	Pathways in cancer	kegg
+HMSL10097	ko04976	Bile secretion	kegg
+HMSL10098	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10098	hsa04010	MAPK signaling pathway	kegg
+HMSL10098	hsa04020	Calcium signaling pathway	kegg
+HMSL10098	hsa04012	ErbB signaling pathway	kegg
+HMSL10098	hsa05223	Non-small cell lung cancer	kegg
+HMSL10098	hsa05200	Pathways in cancer	kegg
+HMSL10099	hsa04020	Calcium signaling pathway	kegg
+HMSL10099	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10099	hsa04012	ErbB signaling pathway	kegg
+HMSL10099	hsa04110	Cell cycle	kegg
+HMSL10099	hsa05200	Pathways in cancer	kegg
+HMSL10099	hsa05220	Chronic myeloid leukemia	kegg
+HMSL10099	hsa04010	MAPK signaling pathway	kegg
+HMSL10100			
+HMSL10101			
+HMSL10102	ko04976	Bile secretion	kegg
+HMSL10102	hsa04540	Gap junction	kegg
+HMSL10103			
+HMSL10104			
+HMSL10105			
+HMSL10106			
+HMSL10107			
+HMSL10108			
+HMSL10109			
+HMSL10110			
+HMSL10111			
+HMSL10112			
+HMSL10113			
+HMSL10114	hsa05200	Pathways in cancer	kegg
+HMSL10114	hsa04020	Calcium signaling pathway	kegg
+HMSL10114	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10114	hsa04010	MAPK signaling pathway	kegg
+HMSL10115			
+HMSL10116			
+HMSL10117			
+HMSL10118	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10118	hsa05200	Pathways in cancer	kegg
+HMSL10119			
+HMSL10120	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10120	hsa04010	MAPK signaling pathway	kegg
+HMSL10120	hsa04012	ErbB signaling pathway	kegg
+HMSL10120	hsa05212	Pancreatic cancer	kegg
+HMSL10120	hsa04020	Calcium signaling pathway	kegg
+HMSL10121			
+HMSL10122			
+HMSL10123			
+HMSL10124			
+HMSL10125			
+HMSL10126			
+HMSL10127	hsa04010	MAPK signaling pathway	kegg
+HMSL10127	hsa04510	Focal adhesion	kegg
+HMSL10127	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10128			
+HMSL10129			
+HMSL10130	hsa04151	PI3K-Akt signaling pathway	kegg
+HMSL10130	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10131	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10131	hsa05200	Pathways in cancer	kegg
+HMSL10132			
+HMSL10133	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10133	hsa04010	MAPK signaling pathway	kegg
+HMSL10133	hsa04020	Calcium signaling pathway	kegg
+HMSL10133	hsa04012	ErbB signaling pathway	kegg
+HMSL10133	hsa05200	Pathways in cancer	kegg
+HMSL10134			
+HMSL10136			
+HMSL10137			
+HMSL10138	hsa04062	Chemokine signaling pathway	kegg
+HMSL10138	hsa04630	Jak-STAT signaling pathway	kegg
+HMSL10139			
+HMSL10140			
+HMSL10141			
+HMSL10142			
+HMSL10143			
+HMSL10144	hsa03410	Base excision repair	kegg
+HMSL10144	hsa04064	NF-kappa B signaling pathway	kegg
+HMSL10145	hsa04064	NF-kappa B signaling pathway	kegg
+HMSL10145	hsa03410	Base excision repair	kegg
+HMSL10146			
+HMSL10147			
+HMSL10148			
+HMSL10149			
+HMSL10150	hsa05200	Pathways in cancer	kegg
+HMSL10151			
+HMSL10152			
+HMSL10153			
+HMSL10154			
+HMSL10155			
+HMSL10156			
+HMSL10157	hsa04370	VEGF signaling pathway	kegg
+HMSL10157	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10157	hsa04510	Focal adhesion	kegg
+HMSL10158			
+HMSL10159	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10159	hsa04010	MAPK signaling pathway	kegg
+HMSL10159	hsa04020	Calcium signaling pathway	kegg
+HMSL10159	hsa04012	ErbB signaling pathway	kegg
+HMSL10160			
+HMSL10161			
+HMSL10162			
+HMSL10163			
+HMSL10164			
+HMSL10165			
+HMSL10166			
+HMSL10167			
+HMSL10168			
+HMSL10169	hsa04380	Osteoclast differentiation	kegg
+HMSL10169	hsa04010	MAPK signaling pathway	kegg
+HMSL10169	hsa04370	VEGF signaling pathway	kegg
+HMSL10170			
+HMSL10171			
+HMSL10172			
+HMSL10173			
+HMSL10174			
+HMSL10175	hsa04370	VEGF signaling pathway	kegg
+HMSL10175	hsa04020	Calcium signaling pathway	kegg
+HMSL10175	hsa04010	MAPK signaling pathway	kegg
+HMSL10175	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10175	hsa05200	Pathways in cancer	kegg
+HMSL10176			
+HMSL10177	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10177	hsa04810	Regulation of actin cytoskeleton	kegg
+HMSL10177	hsa04370	VEGF signaling pathway	kegg
+HMSL10177	hsa04010	MAPK signaling pathway	kegg
+HMSL10178			
+HMSL10179			
+HMSL10180			
+HMSL10181			
+HMSL10182	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10182	hsa04370	VEGF signaling pathway	kegg
+HMSL10182	hsa04540	Gap junction	kegg
+HMSL10182	hsa04010	MAPK signaling pathway	kegg
+HMSL10182	hsa04510	Focal adhesion	kegg
+HMSL10183			
+HMSL10184			
+HMSL10185			
+HMSL10186			
+HMSL10187			
+HMSL10188			
+HMSL10189	hsa04062	Chemokine signaling pathway	kegg
+HMSL10189	hsa04012	ErbB signaling pathway	kegg
+HMSL10189	hsa05200	Pathways in cancer	kegg
+HMSL10189	hsa04370	VEGF signaling pathway	kegg
+HMSL10190			
+HMSL10191			
+HMSL10192			
+HMSL10193			
+HMSL10194	hsa04370	VEGF signaling pathway	kegg
+HMSL10194	hsa04020	Calcium signaling pathway	kegg
+HMSL10194	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10194	hsa04010	MAPK signaling pathway	kegg
+HMSL10194	hsa05200	Pathways in cancer	kegg
+HMSL10195			
+HMSL10196			
+HMSL10197			
+HMSL10198	hsa04370	VEGF signaling pathway	kegg
+HMSL10198	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10198	hsa04010	MAPK signaling pathway	kegg
+HMSL10198	hsa04020	Calcium signaling pathway	kegg
+HMSL10198	hsa04012	ErbB signaling pathway	kegg
+HMSL10198	hsa05200	Pathways in cancer	kegg
+HMSL10199			
+HMSL10200			
+HMSL10201			
+HMSL10203			
+HMSL10204			
+HMSL10205			
+HMSL10206			
+HMSL10207			
+HMSL10208			
+HMSL10209			
+HMSL10210			
+HMSL10211			
+HMSL10212			
+HMSL10213			
+HMSL10214			
+HMSL10215			
+HMSL10216			
+HMSL10217			
+HMSL10218			
+HMSL10219			
+HMSL10220			
+HMSL10221			
+HMSL10222	hsa04012	ErbB signaling pathway	kegg
+HMSL10222	hsa04020	Calcium signaling pathway	kegg
+HMSL10223			
+HMSL10224			
+HMSL10225	hsa04010	MAPK signaling pathway	kegg
+HMSL10225	hsa04020	Calcium signaling pathway	kegg
+HMSL10225	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10225	hsa05200	Pathways in cancer	kegg
+HMSL10226	hsa04062	Chemokine signaling pathway	kegg
+HMSL10226	hsa04630	Jak-STAT signaling pathway	kegg
+HMSL10227			
+HMSL10228			
+HMSL10229			
+HMSL10230	hsa04060	Cytokine-cytokine receptor interaction	kegg
+HMSL10230	hsa05202	Transcriptional misregulation in cancer	kegg
+HMSL10230	hsa04630	Jak-STAT signaling pathway	kegg
+HMSL10230	hsa04062	Chemokine signaling pathway	kegg
+HMSL10230	hsa04010	MAPK signaling pathway	kegg
+HMSL10230	hsa05200	Pathways in cancer	kegg
+HMSL10231			
+HMSL10232			
+HMSL10233			
+HMSL10234			
+HMSL10235	ko04150	mTOR signaling pathway	kegg
+HMSL10236			
+HMSL10237	ko00983	Drug metabolism - other enzymes	kegg
+HMSL10238	ko00983	Drug metabolism - other enzymes	kegg
+HMSL10238	hsa00670	One carbon pool by folate	kegg
+HMSL10238	hsa00240	Pyrimidine metabolism	kegg
+HMSL10239			
+HMSL10240			
+HMSL10241	hsa03050	Proteasome	kegg
+HMSL10242			
+HMSL10243			
+HMSL10244			
+HMSL10245			
+HMSL10246	ko04976	Bile secretion	kegg
+HMSL10246	ko00983	Drug metabolism - other enzymes	kegg
+HMSL10247	hsa04540	Gap junction	kegg
+HMSL10247	ko04976	Bile secretion	kegg
+HMSL10248	ko04976	Bile secretion	kegg
+HMSL10249	ko04976	Bile secretion	kegg
+HMSL10250	ko04976	Bile secretion	kegg
+HMSL10251			
+HMSL10252	hsa00230	Purine metabolism	kegg
+HMSL10252	hsa00240	Pyrimidine metabolism	kegg
+HMSL10252	hsa00480	Glutathione metabolism	kegg
+HMSL10253			
+HMSL10255			
+HMSL10257			
+HMSL10258	hsa00900	Terpenoid backbone biosynthesis	kegg
+HMSL10259			
+HMSL10260			
+HMSL10261			
+HMSL10262			
+HMSL10263	hsa04330	Notch signaling pathway	kegg
+HMSL10263	hsa04110	Cell cycle	kegg
+HMSL10263	hsa05200	Pathways in cancer	kegg
+HMSL10264	ko04976	Bile secretion	kegg
+HMSL10265			
+HMSL10266			
+HMSL10267			
+HMSL10268			
+HMSL10269			
+HMSL10270			
+HMSL10271			
+HMSL10272	hsa00670	One carbon pool by folate	kegg
+HMSL10272	hsa00230	Purine metabolism	kegg
+HMSL10272	hsa00240	Pyrimidine metabolism	kegg
+HMSL10273			
+HMSL10274			
+HMSL10275	ko00982	Drug metabolism - cytochrome P450	kegg
+HMSL10276			
+HMSL10277	hsa05200	Pathways in cancer	kegg
+HMSL10277	hsa04012	ErbB signaling pathway	kegg
+HMSL10277	hsa04150	mTOR signaling pathway	kegg
+HMSL10278	ko04976	Bile secretion	kegg
+HMSL10279			
+HMSL10280			
+HMSL10281	hsa04540	Gap junction	kegg
+HMSL10282	hsa04330	Notch signaling pathway	kegg
+HMSL10282	hsa04110	Cell cycle	kegg
+HMSL10282	hsa05200	Pathways in cancer	kegg
+HMSL10283			
+HMSL10284	hsa04010	MAPK signaling pathway	kegg
+HMSL10284	hsa05218	Melanoma	kegg
+HMSL10284	hsa04012	ErbB signaling pathway	kegg
+HMSL10285			
+HMSL10286			
+HMSL10287	hsa04115	p53 signaling pathway	kegg
+HMSL10287	hsa04110	Cell cycle	kegg
+HMSL10288			
+HMSL10289			
+HMSL10290			
+HMSL10291			
+HMSL10292			
+HMSL10293			
+HMSL10294			
+HMSL10295			
+HMSL10296			
+HMSL10297			
+HMSL10298			
+HMSL10299			
+HMSL10300	hsa00270	Cysteine and methionine metabolism	kegg
+HMSL10301	hsa00270	Cysteine and methionine metabolism	kegg
+HMSL10302			
+HMSL10303	hsa03410	Base excision repair	kegg
+HMSL10303	hsa04064	NF-kappa B signaling pathway	kegg
+HMSL10304	hsa03410	Base excision repair	kegg
+HMSL10305			
+HMSL10306			
+HMSL10307			
+HMSL10308			
+HMSL10309			
+HMSL10310	hsa04330	Notch signaling pathway	kegg
+HMSL10310	hsa04110	Cell cycle	kegg
+HMSL10310	hsa05200	Pathways in cancer	kegg
+HMSL10311	hsa05200	Pathways in cancer	kegg
+HMSL10311	hsa04330	Notch signaling pathway	kegg
+HMSL10311	hsa04110	Cell cycle	kegg
+HMSL10312	hsa05200	Pathways in cancer	kegg
+HMSL10312	hsa04330	Notch signaling pathway	kegg
+HMSL10312	hsa04110	Cell cycle	kegg
+HMSL10313			
+HMSL10314			
+HMSL10315			
+HMSL10316			
+HMSL10317			
+HMSL10318			
+HMSL10319			
+HMSL10320			
+HMSL10321			
+HMSL10322			
+HMSL10323			
+HMSL10324			
+HMSL10325			
+HMSL10326	hsa00260	Glycine, serine and threonine metabolism	kegg
+HMSL10326	hsa00330	Arginine and proline metabolism	kegg
+HMSL10326	hsa00982	Drug metabolism - cytochrome P450	kegg
+HMSL10326	hsa04728	Dopaminergic synapse	kegg
+HMSL10326	hsa00340	Histidine metabolism	kegg
+HMSL10326	hsa00360	Phenylalanine metabolism	kegg
+HMSL10326	hsa00380	Tryptophan metabolism	kegg
+HMSL10326	hsa04726	Serotonergic synapse	kegg
+HMSL10326	hsa00350	Tyrosine metabolism	kegg
+HMSL10327			
+HMSL10328			
+HMSL10329			
+HMSL10331			
+HMSL10332			
+HMSL10333			
+HMSL10334			
+HMSL10335			
+HMSL10337			
+HMSL10338			
+HMSL10339			
+HMSL10343			
+HMSL10344			
+HMSL10345			
+HMSL10346	ko00982	Drug metabolism - cytochrome P450	kegg
+HMSL10346	hsa04727	GABAergic synapse	kegg
+HMSL10346	hsa00650	Butanoate metabolism	kegg
+HMSL10346	hsa00410	beta-Alanine metabolism	kegg
+HMSL10346	hsa00640	Propanoate metabolism	kegg
+HMSL10346	hsa00250	Alanine, aspartate and glutamate metabolism	kegg
+HMSL10346	hsa00280	Valine, leucine and isoleucine degradation	kegg
+HMSL10346	hsa04020	Calcium signaling pathway	kegg
+HMSL10346	hsa04010	MAPK signaling pathway	kegg
+HMSL10347			
+HMSL10348			

@@ -33,25 +33,24 @@ def uniq(seq):
     return type(seq)(ret)
 
 
-colnames = ('drug_id drug_moniker gene_family description reference'.split())
+colnames = ('drug_id gene_family description reference'.split())
 
 print '\t'.join(colnames)
 ids = []
-id2drug = dict()
+seen = set()
 drug2fam = dict()
 
 fii = fi.input()
 next(fii)
 for line in fii:
     record = line.rstrip('\r\n')
-    drug_id, drug, _, gene_id = record.split('\t')[:4]
-    if not drug_id in id2drug:
+    drug_id, _, gene_id = record.split('\t')[:3]
+    if not drug_id in seen:
         ids.append(drug_id)
-        id2drug[drug_id] = drug
+        seen.add(drug_id)
     drug2fam.setdefault(drug_id, set()).update(gene2fams.get(gene_id, set()))
 
 for drug_id in ids:
-    drug = id2drug[drug_id]
     fams = drug2fam.get(drug_id)
     if fams:
         ref = 'hgnc'
@@ -61,4 +60,4 @@ for drug_id in ids:
 
     for f in fams:
         desc = '' if f == '' else fam2desc[f]
-        print '\t'.join((drug_id, drug, f, desc, ref))
+        print '\t'.join((drug_id, f, desc, ref))
