@@ -112,7 +112,8 @@ def cleanup_record(r):
     r = cleanup_alts(r)
     return rec('HMSL%s' % r[0], *r[1:])
 
-csv.writer(sys.stdout,
-           delimiter='\t',
-           lineterminator='\n').writerows([cleanup_record(rec(*r))
-                                      for r in csv.reader(fi.input())])
+reader = csv.reader(fi.input())
+writer = csv.writer(sys.stdout, delimiter='\t', lineterminator='\n')
+
+writer.writerow(next(reader))
+writer.writerows([cleanup_record(rec(*r)) for r in reader])
