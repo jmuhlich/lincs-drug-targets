@@ -1,6 +1,7 @@
 ### project-specific stuff
 
 drugbank.xml*
+drugbank.sqlite*
 
 
 ### general python stuff
