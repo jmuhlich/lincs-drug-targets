@@ -45,67 +45,69 @@ ns = 'http://drugbank.ca'
 qnames = dict((tag, lxml.etree.QName(ns, tag).text)
               for tag in ('drug', 'drug-interaction', 'partner'))
 
-with conn.begin() as trans:
-    for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
-        # We need to skip 'drug' elements in drug-interaction sub-elements. It's
-        # unfortunate they re-used this tag name.
-        if element.getparent().tag == qnames['drug-interaction']:
-            continue
-        drug_id = xpath(element, 'd:drugbank-id/text()')
-        name = xpath(element, 'd:name/text()')
-        synonyms = xpath(element, 'd:synonyms/d:synonym/text()', single=False)
-        synonyms += xpath(element, 'd:brands/d:brand/text()', single=False)
-        molecular_formula = xpath(element, './/d:property'
-                                  '[d:kind="Molecular Formula"]/d:value/text()')
-        kegg_id = xpath(element, './/d:external-identifier'
-                        '[d:resource="KEGG Drug"]/d:identifier/text()')
-        pubchem_cid = xpath(element, './/d:external-identifier'
-                            '[d:resource="PubChem Compound"]/d:identifier/text()')
-        partner_ids = xpath(element, 'd:targets/d:target/@partner', single=False)
-        conn.execute(drugbank_drug.insert().
-                     values(drug_id=drug_id, name=name, synonyms=synonyms,
-                            kegg_id=kegg_id, pubchem_cid=pubchem_cid,
-                            molecular_formula=molecular_formula,
-                            partners=partner_ids))
-        conn.execute(drugbank_name.insert().
-                     values(drug_id=drug_id, name=name.lower()))
-        for s in synonyms:
-            conn.execute(drugbank_name.insert().
-                         values(drug_id=drug_id, name=s.lower()))
+# Parse drugbank xml into sqlite, only if the table is empty.
+if not conn.execute(drugbank_drug.select()).first():
+    with conn.begin() as trans:
+        for event, element in lxml.etree.iterparse(datafile, tag=qnames['drug']):
+            # We need to skip 'drug' elements in drug-interaction sub-elements.
+            # It's unfortunate they re-used this tag name.
+            if element.getparent().tag == qnames['drug-interaction']:
+                continue
+            drug_id = xpath(element, 'd:drugbank-id/text()')
+            name = xpath(element, 'd:name/text()')
+            synonyms = xpath(
+                element, 'd:synonyms/d:synonym/text()', single=False)
+            synonyms += xpath(
+                element, 'd:brands/d:brand/text()', single=False)
+            molecular_formula = xpath(
+                element, './/d:property[d:kind="Molecular Formula"]/'
+                'd:value/text()')
+            kegg_id = xpath(
+                element, './/d:external-identifier[d:resource="KEGG Drug"]/'
+                'd:identifier/text()')
+            pubchem_cid = xpath(
+                element, './/d:external-identifier[d:resource="PubChem Compound"]/'
+                'd:identifier/text()')
+            partner_ids = xpath(
+                element, 'd:targets/d:target/@partner', single=False)
+            conn.execute(
+                drugbank_drug.insert().
+                values(drug_id=drug_id, name=name, synonyms=synonyms,
+                       kegg_id=kegg_id, pubchem_cid=pubchem_cid,
+                       molecular_formula=molecular_formula,
+                       partners=partner_ids))
+            conn.execute(
+                drugbank_name.insert().
+                values(drug_id=drug_id, name=name.lower()))
+            for s in synonyms:
+                conn.execute(
+                    drugbank_name.insert().
+                    values(drug_id=drug_id, name=s.lower()))
+            element.clear()
+
+    # Turns out it's much faster to do a second iterparse loop with a different
+    # tag argument than to do just one iterparse loop with a conditional on the
+    # tag name. The lxml internals are much more efficient at filtering tags
+    # than we are, and the disk I/O and buffer cache impact are negligible. It
+    # would be nice if the tag argument could accept a list of tag names...
+    datafile.seek(0)
+    partner_to_uniprot = {}
+    for event, element in lxml.etree.iterparse(datafile, tag=qnames['partner']):
+        partner_id = element.get('id')
+        uniprot_id = xpath(element, './/d:external-identifier'
+                           '[d:resource="UniProtKB"]/d:identifier/text()')
+        partner_to_uniprot[partner_id] = uniprot_id
         element.clear()
 
-# Turns out it's much faster to do a second iterparse loop with a different
-# tag argument than to do just one iterparse loop with a conditional on the
-# tag name. The lxml internals are much more efficient at filtering tags
-# than we are, and the disk I/O and buffer cache impact are negligible. It
-# would be nice if the tag argument could accept a list of tag names...
-datafile.seek(0)
-partner_to_uniprot = {}
-for event, element in lxml.etree.iterparse(datafile, tag=qnames['partner']):
-    partner_id = element.get('id')
-    uniprot_id = xpath(element, './/d:external-identifier'
-                       '[d:resource="UniProtKB"]/d:identifier/text()')
-    partner_to_uniprot[partner_id] = uniprot_id
-    element.clear()
+    with conn.begin() as trans:
+        for rec in conn.execute(drugbank_drug.select()):
+            new_values = dict(rec)
+            new_values['partners'] = map(partner_to_uniprot.__getitem__, rec.partners)
+            new_values['partners'] = filter(None, new_values['partners'])
+            conn.execute(drugbank_drug.update().
+                         where(drugbank_drug.c.drug_id == rec.drug_id).
+                         values(**new_values))
 
-with conn.begin() as trans:
-    for rec in conn.execute(drugbank_drug.select()):
-        new_values = dict(rec)
-        new_values['partners'] = map(partner_to_uniprot.__getitem__, rec.partners)
-        new_values['partners'] = filter(None, new_values['partners'])
-        conn.execute(drugbank_drug.update().
-                     where(drugbank_drug.c.drug_id == rec.drug_id).
-                     values(**new_values))
-
-# Targets -- kegg_drug_id: [uniprot_ids]
-#print '\n'.join(map(str, sorted(drug_targets.items())))
-
-
-def to_utf8(v):
-    return encodings.utf_8.encode(v)[0] if v else ''
-#drug_info_good_mf = [x for x in drug_info if x.mf and ' ' not in x.mf]
-# Drugs -- name, synonyms, cid, mf
-#print '\n'.join('\t'.join(map(to_utf8, x.values())) for x in drug_info_good_mf)
 
 drugbank_names = [
     rec[0] for rec in conn.execute(sa.select([drugbank_name.c.name]))]
@@ -123,6 +125,8 @@ hmsl_sm = sa.Table(
 hmsl_sm.append_constraint(sa.PrimaryKeyConstraint(hmsl_sm.c.sm_id))
 hmsl_sm.c.alternative_names.type = sa.PickleType()
 metadata.create_all(tables=[hmsl_sm])
+# Clear out hmsl_sm table unconditionally (it's fast to reload).
+conn.execute(hmsl_sm.delete())
 with conn.begin() as trans:
     for row in sm_reader:
         row[0] = row[0][:-4]
@@ -130,14 +134,17 @@ with conn.begin() as trans:
         try:
             conn.execute(hmsl_sm.insert().values(row))
         except sa.exc.IntegrityError as e:
+            # Merge tsv row with existing record.
             rec = conn.execute(hmsl_sm.select().
                                where(hmsl_sm.c.sm_id == row[0])).first()
             if rec:
                 new_rec = dict(rec)
+                # Append new name and synonyms to synonyms.
                 new_rec['alternative_names'] = list(set(
                         rec.alternative_names +
                         [row[sm_fields.index('sm_name')]] +
                         row[sm_fields.index('alternative_names')]))
+                # If no existing CID, use the new one.
                 if not rec.pubchem_cid:
                     new_rec['pubchem_cid'] = row[sm_fields.index('pubchem_cid')]
                 conn.execute(hmsl_sm.update().
