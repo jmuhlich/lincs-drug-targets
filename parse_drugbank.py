@@ -15,6 +15,9 @@ def xpath(obj, path, single=True):
             raise ValueError("XPath expression matches more than one value")
     return result
 
+def record_match(hmsl_id, drugbank_id, description):
+    conn.execute(hmsl_drugbank.insert().values(locals()))
+
 db_file = 'drugbank.sqlite'
 #db_file = ':memory:'
 engine = sa.create_engine('sqlite:///' + db_file)
@@ -34,6 +37,12 @@ drugbank_name = sa.Table(
     'drugbank_name', metadata,
     sa.Column('drug_id', sa.String()),
     sa.Column('name', sa.String(), index=True),
+    )
+hmsl_drugbank = sa.Table(
+    'hmsl_drugbank', metadata,
+    sa.Column('hmsl_id', sa.String(), primary_key=True),
+    sa.Column('drugbank_id', sa.String()),
+    sa.Column('description', sa.String()),
     )
 metadata.create_all()
 
@@ -151,27 +160,28 @@ with conn.begin() as trans:
                              where(hmsl_sm.c.sm_id == new_rec['sm_id']).
                              values(new_rec))
 
-hmsl_to_drugbank = {}
+conn.execute(hmsl_drugbank.delete())
+with conn.begin() as trans:
+    for sm in conn.execute(hmsl_sm.select()):
 
-for sm in conn.execute(hmsl_sm.select()):
+        hmsl_names = [s.lower() for s in [sm.sm_name] + sm.alternative_names]
+        for name in hmsl_names:
+            match = conn.execute(sa.select([drugbank_name.c.drug_id]).
+                                 where(drugbank_name.c.name == name)
+                                 ).scalar()
+            if match:
+                break
+        if match:
+            record_match(sm.sm_id, match, 'Name: %s' % name)
+            continue
 
-    hmsl_names = [s.lower() for s in [sm.sm_name] + sm.alternative_names]
-    for name in hmsl_names:
-        match = conn.execute(sa.select([drugbank_name.c.drug_id]).
-                             where(drugbank_name.c.name == name)
+        match = conn.execute(sa.select([drugbank_drug.c.drug_id]).
+                             where(drugbank_drug.c.pubchem_cid == 
+                                   sm.pubchem_cid)
                              ).scalar()
         if match:
-            break
-    if match:
-        print "%s\t%s\tName: %s" % (sm.sm_id, match, name)
-        continue
+            record_match(sm.sm_id, match, 'PubChem CID: %s' % sm.pubchem_cid)
+            continue
 
-    match = conn.execute(sa.select([drugbank_drug.c.drug_id]).
-                         where(drugbank_drug.c.pubchem_cid == 
-                               sm.pubchem_cid)
-                         ).scalar()
-    if match:
-        print "%s\t%s\tPubChem CID: %s" % (sm.sm_id, match, sm.pubchem_cid)
-        continue
-
-    print "%s\t\tNO MATCH" % sm.sm_id
+for rec in conn.execute(hmsl_drugbank.select()):
+    print '\t'.join(rec)
