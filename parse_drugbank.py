@@ -5,7 +5,7 @@ import csv
 import sqlalchemy as sa
 
 def xpath(obj, path, single=True):
-    result = obj.xpath(path, namespaces={'d': ns})
+    result = map(unicode, obj.xpath(path, namespaces={'d': ns}))
     if single:
         if len(result) == 0:
             result = None
